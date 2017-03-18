@@ -1,0 +1,31 @@
+{
+  "name": "homing_roster",
+  "version": "1.0.0",
+  "description": "homing_roster",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selfresonator/homing_roster.git"
+  },
+  "author": "selfresonator (aj farley)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selfresonator/homing_roster/issues"
+  },
+  "homepage": "https://github.com/selfresonator/homing_roster#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "helmet": "^3.5.0",
+    "serve-favicon": "^2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-nodemon": "^0.4.2",
+    "nodemon": "^1.11.0"
+  }
+}
