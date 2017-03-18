@@ -1,0 +1,9 @@
+{
+  "name": "homing_roster",
+  "version": "1.0.0",
+  "description": "homing_roster",
+  "dependencies": {
+    "sass-bootstrap": "latest",
+  },
+  "private": true
+}

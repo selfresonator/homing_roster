@@ -6,11 +6,6 @@ module.exports = function(grunt) {
 		nodemon: {
 			dev: {
 				script: 'app.js',
-	      callback: function (nodemon) {
-	        nodemon.on('log', function (event) {
-	          console.log(event.colour);
-	        });
-	      },
 	      env: {
 	      	PORT: 3000
 	      },
