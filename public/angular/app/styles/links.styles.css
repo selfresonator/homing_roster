@@ -1,0 +1,13 @@
+/* line 3, ../../../scss/links.styles.scss */
+.header-main {
+  height: 200;
+  width: 100%;
+  font-family: Helvetica;
+  position: fixed;
+  animation: appear 334ms ease-out .15s forwards;
+  background-color: red;
+}
+/* line 11, ../../../scss/links.styles.scss */
+.header-main .title {
+  text-align: center;
+}

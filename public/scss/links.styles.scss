@@ -1,13 +1,14 @@
-$header-main-color: tan;
+$header-main-color: red;
 
 .header-main {
     height: 200;
+    width: 100%;
     font-family: Helvetica;
     position: fixed;
     animation: appear 334ms ease-out .15s forwards;
     background-color: $header-main-color;
 
     .title {
-      text-align: center;
+        text-align: center;
     }
 }
