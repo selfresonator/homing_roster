@@ -9,8 +9,10 @@
       'links.controller'
     ]);
 
-    angular.module('app.config', []);
-    angular.module('app.routes', ['app.constants', 'ngRoute']);
-    angular.module('links.controller', []);
+  angular.module('app.config', []);
+
+  angular.module('app.routes', ['app.constants', 'ngRoute']);
+  
+  angular.module('links.controller', []);
 
 })();
