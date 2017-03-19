@@ -1,11 +1,12 @@
 (function () {
-  'use strict';
+  // 'use strict';
 
-  angular.module('app.constants', [])
+  angular
+    .module('app.constants', [])
     .constant('Constants', {
-      serverRoot: '',
-      indexPath: '/index',
-      linksPath: '/links'
-    });
+        serverRoot: '',
+        indexPath: '/index',
+        linksPath: '/links'
+      });
 
 })();

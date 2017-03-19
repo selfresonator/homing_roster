@@ -1,15 +1,16 @@
 (function() {
-  'use strict';
+  // 'use strict';
 
   angular
-    .module('app')
+    .module('links.controller')
     .controller('LinksController', LinksController);
 
-    LinksController.$inject = [$log];
+    LinksController.$inject = ['$log'];
 
-    function LinksController('$log') {
+    function LinksController($log) {
       var vm = this;
       vm.title = 'Social';
+      $log.info('hello');
     }
 
 })();
