@@ -11,13 +11,13 @@ var app = express();
 
 //serving our index.html
 app.use(express.static(publicPath));
-app.use(bodyParser.json());
 app.use(helmet());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// app.use(favicon(__dirname + '/public/assets/black-house.ico'));
+// app.use(favicon(__dirname + '/public/img/____.ico'));
 
 app.listen(port, function(req,res) {
 	console.log('Inizitializing homing_roster');

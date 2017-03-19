@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "homing_roster",
   "dependencies": {
-    "sass-bootstrap": "latest",
+    "sass-bootstrap": "~3.0.0"
   },
   "private": true
 }
