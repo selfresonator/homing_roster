@@ -5,8 +5,14 @@ $header-main-color: red;
     width: 100%;
     font-family: Helvetica;
     position: fixed;
-    animation: appear 334ms ease-out .15s forwards;
+    -webkit-animation: appear 334ms ease-out .15s forwards;
+    animation: appear 3s infinite alternate;
     background-color: $header-main-color;
+
+    @keyframes appear {
+      from {width: 50%;}
+      to {width: 75%;}
+    }
 
     .title {
         text-align: center;
