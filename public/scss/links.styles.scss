@@ -1,17 +1,17 @@
-$header-main-color: red;
+$header-main-color: rgba(247,202,247,0.5);
 
 .header-main {
     height: 200;
-    width: 100%;
-    font-family: Helvetica;
+    width: 98.6%;
+    top: 10px;
+    font-family: Allerta;
     position: fixed;
-    -webkit-animation: appear 334ms ease-out .15s forwards;
-    animation: appear 3s infinite alternate;
+    -webkit-animation: appear .334s linear;
+    animation: appear .334s linear;
     background-color: $header-main-color;
-
     @keyframes appear {
-      from {width: 50%;}
-      to {width: 75%;}
+      from {top: 0px; opacity: 0}
+      to {top: 10px; opacity: 1}
     }
 
     .title {
