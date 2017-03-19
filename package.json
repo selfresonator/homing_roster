@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/selfresonator/homing_roster#readme",
   "dependencies": {
+    "angular-route": "^1.6.3",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "helmet": "^3.5.0",

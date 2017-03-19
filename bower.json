@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "homing_roster",
   "dependencies": {
-    "sass-bootstrap": "~3.0.0"
+    "sass-bootstrap": "~3.0.0",
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3"
   },
   "private": true
 }
