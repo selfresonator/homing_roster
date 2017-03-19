@@ -4,7 +4,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
-var publicPath = path.resolve(__dirname, 'public');
+var publicPath = path.resolve(__dirname, 'public/angular/app');
 var port = 3000;
 
 var app = express();
@@ -12,7 +12,7 @@ var app = express();
 //serving our index.html
 app.use(express.static(publicPath));
 app.use(helmet());
-app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 // app.use(favicon(__dirname + '/public/img/____.ico'));
 
 app.listen(port, function(req,res) {
-  console.log('Inizitializing homing_roster');
+  console.log('Initializing homing_roster');
   console.log('Server running on port ' + port);
 });
 
