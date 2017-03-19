@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 // app.use(favicon(__dirname + '/public/img/____.ico'));
 
 app.listen(port, function(req,res) {
-	console.log('Inizitializing homing_roster');
+  console.log('Inizitializing homing_roster');
   console.log('Server running on port ' + port);
 });
 
