@@ -22,6 +22,7 @@ coverage
 
 # SASS
 .sass-cache
+public/angular/app/styles/links.styles.css.map
 
 # node-waf configuration
 .lock-wscript
