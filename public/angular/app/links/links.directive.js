@@ -2,8 +2,8 @@
 //   'use strict';
 //
 //   angular
-//     .module('links.directive')
-//     .directive('LinksDirective', linksDirective);
+//     .controller('LinksController')
+//     .directive('linksDirective', linksDirective);
 //
 //     function linksDirective() {
 //       var directive = {
