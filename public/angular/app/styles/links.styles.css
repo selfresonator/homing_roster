@@ -1,25 +1,84 @@
 /* line 3, ../../../scss/links.styles.scss */
-.header-main {
-  height: 200;
-  width: 98.6%;
-  top: 10px;
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 14, ../../../scss/links.styles.scss */
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+/* line 19, ../../../scss/links.styles.scss */
+.container .header-main {
+  width: 100%;
+  top: 7%;
+  position: absolute;
   font-family: Allerta;
-  position: fixed;
-  -webkit-animation: appear .334s linear;
-  animation: appear .334s linear;
-  background-color: rgba(247, 202, 247, 0.5);
+  text-align: center;
+  -webkit-animation: appear 2s ease-out;
+  animation: appear 1.3s ease-out;
 }
 @keyframes appear {
-  from {
-    top: 0px;
+  0% {
+    top: 2%;
     opacity: 0;
   }
-  to {
-    top: 10px;
+  40% {
+    top: 2%;
+    opacity: 0;
+  }
+  100% {
+    top: 7%;
     opacity: 1;
   }
 }
-/* line 17, ../../../scss/links.styles.scss */
-.header-main .title {
+/* line 34, ../../../scss/links.styles.scss */
+.container .header-main .name {
+  font-size: 3em;
+  margin-bottom: -10px;
+}
+/* line 39, ../../../scss/links.styles.scss */
+.container .header-main .occupation {
+  font-size: 2em;
+}
+/* line 45, ../../../scss/links.styles.scss */
+.container .section2 {
+  width: 37%;
+  top: 40%;
+  position: absolute;
+  font-family: Allerta;
   text-align: center;
+  box-shadow: 10px 10px 5px grey;
+  -webkit-animation: badges .4s linear;
+  animation: badges .6s linear;
+}
+@keyframes badges {
+  from {
+    top: 47%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
+/* line 62, ../../../scss/links.styles.scss */
+.container .section2 .badge {
+  height: 153px;
+  width: 32.5%;
+  background-color: yellow;
+  display: inline-block;
+}
+/* line 69, ../../../scss/links.styles.scss */
+.container .section2 a:link {
+  text-decoration: none;
 }

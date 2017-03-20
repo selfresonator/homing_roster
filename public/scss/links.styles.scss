@@ -1,20 +1,73 @@
 $header-main-color: rgba(247,202,247,0.5);
 
-.header-main {
-    height: 200;
-    width: 98.6%;
-    top: 10px;
-    font-family: Allerta;
-    position: fixed;
-    -webkit-animation: appear .334s linear;
-    animation: appear .334s linear;
-    background-color: $header-main-color;
-    @keyframes appear {
-      from {top: 0px; opacity: 0}
-      to {top: 10px; opacity: 1}
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+
+    .header-main {
+        width: 100%;
+        top: 7%;
+        position: absolute;
+        font-family: Allerta;
+        text-align: center;
+
+        -webkit-animation: appear 2s ease-out;
+        animation: appear 1.3s ease-out;
+        @keyframes appear {
+            0% {top: 2%; opacity: 0}
+            40% {top: 2%; opacity: 0}
+            100% {top: 7%; opacity: 1}
+        }
+
+        .name {
+            font-size: 3em;
+            margin-bottom: -10px;
+        }
+
+        .occupation {
+            font-size: 2em;
+        }
+
     }
 
-    .title {
+    .section2 {
+        width: 37%;
+        top: 40%;
+        position: absolute;
+        font-family: Allerta;
         text-align: center;
+        // background-color: $header-main-color;
+        box-shadow: 10px 10px 5px grey;
+
+        -webkit-animation: badges .4s linear;
+        animation: badges .6s linear;
+        @keyframes badges {
+            from {top: 47%; opacity: 0}
+            to {top: 40%; opacity: 1}
+        }
+
+
+        .badge {
+            height: 153px;
+            width: 32.5%;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
     }
 }
