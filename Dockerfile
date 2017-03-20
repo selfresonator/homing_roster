@@ -5,9 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package.json bower.json /usr/src/app/
-COPY bower.json /usr/src/app/
-RUN npm bower install
+COPY package.json /usr/src/app/
 RUN npm install
 
 # Bundle app source
