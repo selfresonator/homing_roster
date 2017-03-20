@@ -57,7 +57,7 @@
 .container .section2 {
   font-family: Allerta Stencil;
   font-variant: small-caps;
-  width: 530px;
+  width: 400px;
   top: 25%;
   position: absolute;
   text-align: center;
@@ -75,40 +75,38 @@
     opacity: 1;
   }
 }
-/* line 69, ../../../scss/links.styles.scss */
+/* line 68, ../../../scss/links.styles.scss */
 .container .section2 .badge {
-  margin: 6px;
+  margin: 2px;
   border-radius: 5px;
-  height: 153px;
+  height: 110px;
   width: 30.5%;
   background-color: tan;
   box-shadow: 5px 5px 2px grey;
   display: inline-block;
   transition: background-color .3s;
 }
-/* line 79, ../../../scss/links.styles.scss */
+/* line 78, ../../../scss/links.styles.scss */
 .container .section2 .badge span {
   margin-top: 20px;
   font-size: 1.5em;
 }
-/* line 84, ../../../scss/links.styles.scss */
+/* line 83, ../../../scss/links.styles.scss */
 .container .section2 .badge .badge-name {
   visibility: hidden;
 }
-/* line 89, ../../../scss/links.styles.scss */
+/* line 88, ../../../scss/links.styles.scss */
 .container .section2 .badge:hover {
   background-color: rgba(247, 202, 247, 0.5);
   box-shadow: 7px 7px 2px grey;
   transition: background-color .3s;
 }
-/* line 94, ../../../scss/links.styles.scss */
+/* line 93, ../../../scss/links.styles.scss */
 .container .section2 .badge:hover .badge-name {
   z-index: 999;
   visibility: visible;
 }
-/* line 101, ../../../scss/links.styles.scss */
+/* line 100, ../../../scss/links.styles.scss */
 .container .section2 a:link {
   text-decoration: none;
 }
-
-/*# sourceMappingURL=links.styles.css.map */
