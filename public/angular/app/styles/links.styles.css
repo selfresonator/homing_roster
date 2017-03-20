@@ -52,12 +52,11 @@
 }
 /* line 45, ../../../scss/links.styles.scss */
 .container .section2 {
-  width: 37%;
+  width: 540px;
   top: 40%;
   position: absolute;
   font-family: Allerta;
   text-align: center;
-  box-shadow: 10px 10px 5px grey;
   -webkit-animation: badges .4s linear;
   animation: badges .6s linear;
 }
@@ -73,12 +72,16 @@
 }
 /* line 62, ../../../scss/links.styles.scss */
 .container .section2 .badge {
+  margin: 6px;
+  border-radius: 5px;
   height: 153px;
-  width: 32.5%;
+  width: 30.5%;
   background-color: yellow;
   display: inline-block;
 }
-/* line 69, ../../../scss/links.styles.scss */
+/* line 71, ../../../scss/links.styles.scss */
 .container .section2 a:link {
   text-decoration: none;
 }
+
+/*# sourceMappingURL=links.styles.css.map */
