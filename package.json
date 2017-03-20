@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "watch": "grunt spy",
+    "start": "nodemon"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,15 +26,12 @@
     "serve-favicon": "^2.4.1"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.0",
     "grunt": "^1.0.1",
-    "grunt-babel": "^6.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-nodemon": "^0.4.2",
-    "load-grunt-tasks": "^3.5.2",
     "nodemon": "^1.11.0"
   }
 }
