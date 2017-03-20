@@ -46,7 +46,8 @@ $header-main-color: rgba(247,202,247,0.5);
         width: 540px;
         top: 40%;
         position: absolute;
-        font-family: Allerta;
+        font-family: Allerta Stencil;
+        font-variant: small-caps;
         text-align: center;
         // background-color: $header-main-color;
         // box-shadow: 10px 10px 5px grey;
@@ -64,9 +65,30 @@ $header-main-color: rgba(247,202,247,0.5);
             border-radius: 5px;
             height: 153px;
             width: 30.5%;
-            background-color: yellow;
+            background-color: tan;
             display: inline-block;
+            transition: background-color .3s;
+
+            span {
+                margin-top: 20px;
+                font-size: 1.5em;
+            }
+
+            .badge-name {
+                visibility: hidden;
+            }
         }
+
+        .badge:hover {
+            background-color: rgba(247,202,247,0.5);
+            transition: background-color .3s;
+
+            .badge-name {
+                z-index: 999;
+                visibility: visible;
+            }
+        }
+
 
         a:link {
             text-decoration: none;
