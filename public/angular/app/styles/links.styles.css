@@ -3,12 +3,11 @@ body {
   background-color: black;
 }
 
-/* line 25, ../../../scss/links.styles.scss */
+/* line 12, ../../../scss/links.styles.scss */
 .flexcontainer {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  /* works with row or column */
   flex-direction: row;
   -webkit-align-items: center;
   align-items: center;
@@ -16,7 +15,7 @@ body {
   justify-content: center;
 }
 
-/* line 41, ../../../scss/links.styles.scss */
+/* line 24, ../../../scss/links.styles.scss */
 .container .header-main {
   width: 100%;
   top: 8%;
@@ -39,7 +38,7 @@ body {
     opacity: 1;
   }
 }
-/* line 56, ../../../scss/links.styles.scss */
+/* line 37, ../../../scss/links.styles.scss */
 .container .header-main .name {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -47,14 +46,14 @@ body {
   color: white;
   margin-bottom: -10px;
 }
-/* line 63, ../../../scss/links.styles.scss */
+/* line 44, ../../../scss/links.styles.scss */
 .container .header-main .occupation {
   font-family: Allerta Stencil;
   margin-right: 1.5%;
   color: white;
   font-size: 1.25em;
 }
-/* line 72, ../../../scss/links.styles.scss */
+/* line 53, ../../../scss/links.styles.scss */
 .container .links {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -75,7 +74,7 @@ body {
     opacity: 1;
   }
 }
-/* line 88, ../../../scss/links.styles.scss */
+/* line 66, ../../../scss/links.styles.scss */
 .container .links .fa {
   color: white;
   padding: 10px;
@@ -83,13 +82,14 @@ body {
   width: 50px;
   text-align: center;
   text-decoration: none;
+  transition: all 0.5s;
 }
-/* line 95, ../../../scss/links.styles.scss */
+/* line 74, ../../../scss/links.styles.scss */
 .container .links .fa:hover {
-  color: red;
+  color: #FF1177;
   transition: background-color .3s;
 }
-/* line 117, ../../../scss/links.styles.scss */
+/* line 86, ../../../scss/links.styles.scss */
 .container .links a:link {
   text-decoration: none;
 }

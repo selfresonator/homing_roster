@@ -2,19 +2,6 @@ $header-main-color: rgba(247,202,247,0.5);
 
 body {
     background-color: black;
-
-    // img {
-    //     height: 50%;
-    //     width: 100vh;
-    //     z-index: -1000;
-    //     -webkit-animation: appear 1.3s ease-out;
-    //     animation: appear 1.3s ease-out;
-    //     @keyframes appear {
-    //         0% {top: 3%; opacity: 0}
-    //         40% {top: 3%; opacity: 0}
-    //         100% {top: 8%; opacity: 1}
-    //     }
-    // }
 }
 
 @mixin allerta-stencil {
@@ -25,7 +12,7 @@ body {
 .flexcontainer {
    display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row; /* works with row or column */
+   -webkit-flex-direction: row;
    flex-direction: row;
    -webkit-align-items: center;
    align-items: center;
@@ -34,18 +21,12 @@ body {
 }
 
 .container {
-    // height: 100vh;
-    // width: 100vw;
-    // margin: auto;
-
     .header-main {
         width: 100%;
         top: 8%;
         position: absolute;
         font-family: Allerta;
         text-align: center;
-
-        // -webkit-animation: appear 1.3s ease-out;
         animation: appear 1.3s ease-out;
         @keyframes appear {
             0% {top: 3%; opacity: 0}
@@ -76,9 +57,6 @@ body {
         bottom: -1.5%;
         position: absolute;
         text-align: center;
-        // background-color: $header-main-color;
-
-        // -webkit-animation: badges .4s linear;
         animation: badges .6s linear;
         @keyframes badges {
             from {bottom: -4%; opacity: 0}
@@ -92,11 +70,21 @@ body {
             width: 50px;
             text-align: center;
             text-decoration: none;
+            transition: all 0.5s;
             &:hover {
-                color: red;
+                color: #FF1177;
                 transition: background-color .3s;
+                // for glowing effect
+                // animation: neon1 1.5s ease-in-out infinite alternate;
+                // @-webkit-keyframes neon1 {
+                //     from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;}
+                //     to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;}
+                // }
             }
+        }
 
+        a:link {
+            text-decoration: none;
         }
 
         // .badge {
@@ -113,9 +101,5 @@ body {
         //         transition: background-color .3s;
         //     }
         // }
-
-        a:link {
-            text-decoration: none;
-        }
     }
 }
