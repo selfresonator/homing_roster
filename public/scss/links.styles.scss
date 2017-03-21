@@ -1,14 +1,136 @@
-$header-main-color: red;
+@mixin allerta-stencil {
+    font-family: Allerta Stencil;
+    font-variant: small-caps;
+}
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
 
-.header-main {
-    height: 200;
-    width: 100%;
-    font-family: Helvetica;
-    position: fixed;
-    animation: appear 334ms ease-out .15s forwards;
-    background-color: $header-main-color;
+body {
 
-    .title {
-        text-align: center;
+    // BACKGROUND IMAGES
+    ////////////////////
+    background-color: black;
+    .background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center center;
     }
+    .intro {
+        background-image: url('../../img/newmaze.jpg');
+        opacity: 1 !important;
+        animation: bg 2s linear;
+        @keyframes bg {
+            0% {opacity: 0}
+            100% {opacity: 1}
+        }
+    }
+    .show {
+        opacity: 1;
+    }
+    .hide {
+        opacity: 0;
+    }
+    .github {
+        background-image: url('../../img/code1.png');
+    }
+    .twitter {
+        background-image: url('../../img/tweets1.jpg');
+    }
+    .linkedin {
+        background-image: url('../../img/work1.jpg');
+    }
+    .soundcloud {
+        background-image: url('../../img/music1.jpg');
+    }
+    .email {
+        background-image: url('../../img/email1.jpg');
+    }
+
+    
+    // LINKS CONTENT
+    ////////////////////
+    .container {
+        .header-main {
+            width: 100%;
+            margin-top: 20%;
+            position: absolute;
+            font-family: Allerta;
+            text-align: center;
+            animation: appear 2.7s ease-out;
+            @keyframes appear {
+                0% {margin-top: 15%; opacity: 0}
+                70% {margin-top: 15%; opacity: 0}
+                100% {margin-top: 20%; opacity: 1}
+            }
+
+            .name {
+                @include allerta-stencil;
+                font-size: 2.5em;
+                color: white;
+                margin-bottom: -10px;
+            }
+
+            .occupation {
+                font-family: Allerta Stencil;
+                margin-right: 1%;
+                color: white;
+                font-size: 1.25em;
+            }
+
+        }
+
+        .links {
+            @include allerta-stencil;
+            height: 165px;
+            width: 320px;
+            bottom: -1.5%;
+            position: absolute;
+            text-align: center;
+            animation: links 2.5s ease-out;
+            @keyframes links {
+                0% {bottom: -4%; opacity: 0}
+                70% {bottom: -4%; opacity: 0}
+                100% {bottom: -1.5%; opacity: 1}
+            }
+
+            .fa {
+                color: white;
+                padding: 10px;
+                font-size: 3em;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.5s;
+                &:hover {
+                    color: #FF1177;
+                    // for glowing effect
+                    // animation: neon1 1.5s ease-in-out infinite alternate;
+                    // @-webkit-keyframes neon1 {
+                    //     from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;}
+                    //     to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;}
+                    // }
+                }
+            }
+
+            a:link {
+                text-decoration: none;
+            }
+        }
+    }
+
 }

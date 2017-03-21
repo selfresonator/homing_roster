@@ -1,13 +1,152 @@
-/* line 3, ../../../scss/links.styles.scss */
-.header-main {
-  height: 200;
-  width: 100%;
-  font-family: Helvetica;
-  position: fixed;
-  animation: appear 334ms ease-out .15s forwards;
-  background-color: red;
+/* line 5, ../../../scss/links.styles.scss */
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-/* line 11, ../../../scss/links.styles.scss */
-.header-main .title {
+
+/* line 16, ../../../scss/links.styles.scss */
+body {
+  background-color: black;
+}
+/* line 21, ../../../scss/links.styles.scss */
+body .background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 33, ../../../scss/links.styles.scss */
+body .intro {
+  background-image: url("../../img/newmaze.jpg");
+  opacity: 1 !important;
+  animation: bg 2s linear;
+}
+@keyframes bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 42, ../../../scss/links.styles.scss */
+body .show {
+  opacity: 1;
+}
+/* line 45, ../../../scss/links.styles.scss */
+body .hide {
+  opacity: 0;
+}
+/* line 48, ../../../scss/links.styles.scss */
+body .github {
+  background-image: url("../../img/code1.png");
+}
+/* line 51, ../../../scss/links.styles.scss */
+body .twitter {
+  background-image: url("../../img/tweets1.jpg");
+}
+/* line 54, ../../../scss/links.styles.scss */
+body .linkedin {
+  background-image: url("../../img/work1.jpg");
+}
+/* line 57, ../../../scss/links.styles.scss */
+body .soundcloud {
+  background-image: url("../../img/music1.jpg");
+}
+/* line 60, ../../../scss/links.styles.scss */
+body .email {
+  background-image: url("../../img/email1.jpg");
+}
+/* line 68, ../../../scss/links.styles.scss */
+body .container .header-main {
+  width: 100%;
+  margin-top: 20%;
+  position: absolute;
+  font-family: Allerta;
   text-align: center;
+  animation: appear 2.7s ease-out;
+}
+@keyframes appear {
+  0% {
+    margin-top: 15%;
+    opacity: 0;
+  }
+  70% {
+    margin-top: 15%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 20%;
+    opacity: 1;
+  }
+}
+/* line 81, ../../../scss/links.styles.scss */
+body .container .header-main .name {
+  font-family: Allerta Stencil;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: -10px;
+}
+/* line 88, ../../../scss/links.styles.scss */
+body .container .header-main .occupation {
+  font-family: Allerta Stencil;
+  margin-right: 1%;
+  color: white;
+  font-size: 1.25em;
+}
+/* line 97, ../../../scss/links.styles.scss */
+body .container .links {
+  font-family: Allerta Stencil;
+  font-variant: small-caps;
+  height: 165px;
+  width: 320px;
+  bottom: -1.5%;
+  position: absolute;
+  text-align: center;
+  animation: links 2.5s ease-out;
+}
+@keyframes links {
+  0% {
+    bottom: -4%;
+    opacity: 0;
+  }
+  70% {
+    bottom: -4%;
+    opacity: 0;
+  }
+  100% {
+    bottom: -1.5%;
+    opacity: 1;
+  }
+}
+/* line 111, ../../../scss/links.styles.scss */
+body .container .links .fa {
+  color: white;
+  padding: 10px;
+  font-size: 3em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/* line 119, ../../../scss/links.styles.scss */
+body .container .links .fa:hover {
+  color: #FF1177;
+}
+/* line 130, ../../../scss/links.styles.scss */
+body .container .links a:link {
+  text-decoration: none;
 }
