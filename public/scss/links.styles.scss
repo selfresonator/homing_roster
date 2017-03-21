@@ -88,7 +88,7 @@ body {
         .fa {
             color: white;
             padding: 10px;
-            font-size: 30px;
+            font-size: 3em;
             width: 50px;
             text-align: center;
             text-decoration: none;
@@ -98,31 +98,21 @@ body {
             }
 
         }
-        .fa-lg {
-          font-size: (4em / 3);
-          line-height: (3em / 4);
-          vertical-align: -15%;
-        }
-        .fa-2x { font-size: 2em; }
-        .fa-3x { font-size: 3em; }
-        .fa-4x { font-size: 4em; }
-        .fa-5x { font-size: 5em; }
 
-
-        .badge {
-            margin: 1%;
-            height: 38%;
-            width: 20%;
-            background-color: silver;
-            display: inline-block;
-            transition: background-color .3s;
-            background-color: silver;
-
-            &:hover {
-                background-color: white;
-                transition: background-color .3s;
-            }
-        }
+        // .badge {
+        //     margin: 1%;
+        //     height: 38%;
+        //     width: 20%;
+        //     background-color: silver;
+        //     display: inline-block;
+        //     transition: background-color .3s;
+        //     background-color: silver;
+        //
+        //     &:hover {
+        //         background-color: white;
+        //         transition: background-color .3s;
+        //     }
+        // }
 
         a:link {
             text-decoration: none;
