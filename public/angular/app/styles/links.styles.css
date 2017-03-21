@@ -1,9 +1,9 @@
 /* line 3, ../../../scss/links.styles.scss */
 body {
-  background-image: url("../img/newmaze.jpg");
+  background-color: black;
 }
 
-/* line 12, ../../../scss/links.styles.scss */
+/* line 25, ../../../scss/links.styles.scss */
 .flexcontainer {
   display: -webkit-flex;
   display: flex;
@@ -16,37 +16,30 @@ body {
   justify-content: center;
 }
 
-/* line 23, ../../../scss/links.styles.scss */
-.container {
-  height: 100vh;
-  width: 100vw;
-  margin: auto;
-}
-/* line 28, ../../../scss/links.styles.scss */
+/* line 41, ../../../scss/links.styles.scss */
 .container .header-main {
   width: 100%;
-  top: 2%;
+  top: 8%;
   position: absolute;
   font-family: Allerta;
   text-align: center;
-  -webkit-animation: appear 1.3s ease-out;
   animation: appear 1.3s ease-out;
 }
 @keyframes appear {
   0% {
-    top: -3%;
+    top: 3%;
     opacity: 0;
   }
   40% {
-    top: -3%;
+    top: 3%;
     opacity: 0;
   }
   100% {
-    top: 2%;
+    top: 8%;
     opacity: 1;
   }
 }
-/* line 43, ../../../scss/links.styles.scss */
+/* line 56, ../../../scss/links.styles.scss */
 .container .header-main .name {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -54,63 +47,64 @@ body {
   color: white;
   margin-bottom: -10px;
 }
-/* line 50, ../../../scss/links.styles.scss */
+/* line 63, ../../../scss/links.styles.scss */
 .container .header-main .occupation {
   font-family: Allerta Stencil;
+  margin-right: 1.5%;
   color: white;
   font-size: 1.25em;
 }
-/* line 58, ../../../scss/links.styles.scss */
-.container .section2 {
+/* line 72, ../../../scss/links.styles.scss */
+.container .links {
   font-family: Allerta Stencil;
   font-variant: small-caps;
-  width: 400px;
-  top: 25%;
+  height: 165px;
+  width: 320px;
+  bottom: -1.5%;
   position: absolute;
   text-align: center;
-  -webkit-animation: badges .4s linear;
   animation: badges .6s linear;
 }
 @keyframes badges {
   from {
-    top: 30%;
+    bottom: -4%;
     opacity: 0;
   }
   to {
-    top: 25%;
+    bottom: -1.5%;
     opacity: 1;
   }
 }
-/* line 74, ../../../scss/links.styles.scss */
-.container .section2 .badge {
-  margin: 4px;
+/* line 88, ../../../scss/links.styles.scss */
+.container .links .badge {
+  margin: 1%;
   border-radius: 5px;
-  height: 110px;
-  width: 30.5%;
+  height: 38%;
+  width: 20%;
   background-color: silver;
   display: inline-block;
   transition: background-color .3s;
 }
-/* line 83, ../../../scss/links.styles.scss */
-.container .section2 .badge span {
-  margin-top: 20px;
-  font-size: 1.5em;
+/* line 97, ../../../scss/links.styles.scss */
+.container .links .badge p {
+  margin-top: 10px;
+  font-size: 1.3em;
 }
-/* line 88, ../../../scss/links.styles.scss */
-.container .section2 .badge .badge-name {
+/* line 102, ../../../scss/links.styles.scss */
+.container .links .badge .badge-name {
   visibility: hidden;
 }
-/* line 93, ../../../scss/links.styles.scss */
-.container .section2 .badge:hover {
+/* line 107, ../../../scss/links.styles.scss */
+.container .links .badge:hover {
   background-color: white;
   transition: background-color .3s;
 }
-/* line 97, ../../../scss/links.styles.scss */
-.container .section2 .badge:hover .badge-name {
+/* line 111, ../../../scss/links.styles.scss */
+.container .links .badge:hover .badge-name {
   z-index: 999;
   visibility: visible;
 }
-/* line 106, ../../../scss/links.styles.scss */
-.container .section2 a:link {
+/* line 117, ../../../scss/links.styles.scss */
+.container .links a:link {
   text-decoration: none;
 }
