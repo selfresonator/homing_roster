@@ -1,4 +1,9 @@
-/* line 8, ../../../scss/links.styles.scss */
+/* line 3, ../../../scss/links.styles.scss */
+body {
+  background-image: url("../img/newmaze.jpg");
+}
+
+/* line 12, ../../../scss/links.styles.scss */
 .flexcontainer {
   display: -webkit-flex;
   display: flex;
@@ -11,13 +16,13 @@
   justify-content: center;
 }
 
-/* line 19, ../../../scss/links.styles.scss */
+/* line 23, ../../../scss/links.styles.scss */
 .container {
   height: 100vh;
   width: 100vw;
   margin: auto;
 }
-/* line 24, ../../../scss/links.styles.scss */
+/* line 28, ../../../scss/links.styles.scss */
 .container .header-main {
   width: 100%;
   top: 2%;
@@ -41,19 +46,21 @@
     opacity: 1;
   }
 }
-/* line 39, ../../../scss/links.styles.scss */
+/* line 43, ../../../scss/links.styles.scss */
 .container .header-main .name {
   font-family: Allerta Stencil;
   font-variant: small-caps;
   font-size: 2.5em;
+  color: white;
   margin-bottom: -10px;
 }
-/* line 45, ../../../scss/links.styles.scss */
+/* line 50, ../../../scss/links.styles.scss */
 .container .header-main .occupation {
   font-family: Allerta Stencil;
+  color: white;
   font-size: 1.25em;
 }
-/* line 52, ../../../scss/links.styles.scss */
+/* line 58, ../../../scss/links.styles.scss */
 .container .section2 {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -61,7 +68,6 @@
   top: 25%;
   position: absolute;
   text-align: center;
-  background-color: rgba(247, 202, 247, 0.5);
   -webkit-animation: badges .4s linear;
   animation: badges .6s linear;
 }
@@ -75,38 +81,36 @@
     opacity: 1;
   }
 }
-/* line 68, ../../../scss/links.styles.scss */
+/* line 74, ../../../scss/links.styles.scss */
 .container .section2 .badge {
-  margin: 2px;
+  margin: 4px;
   border-radius: 5px;
   height: 110px;
   width: 30.5%;
-  background-color: tan;
-  box-shadow: 5px 5px 2px grey;
+  background-color: silver;
   display: inline-block;
   transition: background-color .3s;
 }
-/* line 78, ../../../scss/links.styles.scss */
+/* line 83, ../../../scss/links.styles.scss */
 .container .section2 .badge span {
   margin-top: 20px;
   font-size: 1.5em;
 }
-/* line 83, ../../../scss/links.styles.scss */
+/* line 88, ../../../scss/links.styles.scss */
 .container .section2 .badge .badge-name {
   visibility: hidden;
 }
-/* line 88, ../../../scss/links.styles.scss */
+/* line 93, ../../../scss/links.styles.scss */
 .container .section2 .badge:hover {
-  background-color: rgba(247, 202, 247, 0.5);
-  box-shadow: 7px 7px 2px grey;
+  background-color: white;
   transition: background-color .3s;
 }
-/* line 93, ../../../scss/links.styles.scss */
+/* line 97, ../../../scss/links.styles.scss */
 .container .section2 .badge:hover .badge-name {
   z-index: 999;
   visibility: visible;
 }
-/* line 100, ../../../scss/links.styles.scss */
+/* line 106, ../../../scss/links.styles.scss */
 .container .section2 a:link {
   text-decoration: none;
 }

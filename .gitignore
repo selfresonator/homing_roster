@@ -24,6 +24,9 @@ coverage
 .sass-cache
 public/angular/app/styles/links.styles.css.map
 
+#non compressed images
+public/img/*
+
 # node-waf configuration
 .lock-wscript
 
