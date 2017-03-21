@@ -76,35 +76,57 @@ body {
   }
 }
 /* line 88, ../../../scss/links.styles.scss */
+.container .links .fa {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 95, ../../../scss/links.styles.scss */
+.container .links .fa:hover {
+  color: red;
+  transition: background-color .3s;
+}
+/* line 101, ../../../scss/links.styles.scss */
+.container .links .fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+/* line 106, ../../../scss/links.styles.scss */
+.container .links .fa-2x {
+  font-size: 2em;
+}
+/* line 107, ../../../scss/links.styles.scss */
+.container .links .fa-3x {
+  font-size: 3em;
+}
+/* line 108, ../../../scss/links.styles.scss */
+.container .links .fa-4x {
+  font-size: 4em;
+}
+/* line 109, ../../../scss/links.styles.scss */
+.container .links .fa-5x {
+  font-size: 5em;
+}
+/* line 112, ../../../scss/links.styles.scss */
 .container .links .badge {
   margin: 1%;
-  border-radius: 5px;
   height: 38%;
   width: 20%;
   background-color: silver;
   display: inline-block;
   transition: background-color .3s;
+  background-color: silver;
 }
-/* line 97, ../../../scss/links.styles.scss */
-.container .links .badge p {
-  margin-top: 10px;
-  font-size: 1.3em;
-}
-/* line 102, ../../../scss/links.styles.scss */
-.container .links .badge .badge-name {
-  visibility: hidden;
-}
-/* line 107, ../../../scss/links.styles.scss */
+/* line 121, ../../../scss/links.styles.scss */
 .container .links .badge:hover {
   background-color: white;
   transition: background-color .3s;
 }
-/* line 111, ../../../scss/links.styles.scss */
-.container .links .badge:hover .badge-name {
-  z-index: 999;
-  visibility: visible;
-}
-/* line 117, ../../../scss/links.styles.scss */
+/* line 127, ../../../scss/links.styles.scss */
 .container .links a:link {
   text-decoration: none;
 }

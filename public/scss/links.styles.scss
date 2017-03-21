@@ -76,6 +76,7 @@ body {
         bottom: -1.5%;
         position: absolute;
         text-align: center;
+        // background-color: $header-main-color;
 
         // -webkit-animation: badges .4s linear;
         animation: badges .6s linear;
@@ -84,33 +85,42 @@ body {
             to {bottom: -1.5%; opacity: 1}
         }
 
+        .fa {
+            color: white;
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+                color: red;
+                transition: background-color .3s;
+            }
+
+        }
+        .fa-lg {
+          font-size: (4em / 3);
+          line-height: (3em / 4);
+          vertical-align: -15%;
+        }
+        .fa-2x { font-size: 2em; }
+        .fa-3x { font-size: 3em; }
+        .fa-4x { font-size: 4em; }
+        .fa-5x { font-size: 5em; }
+
 
         .badge {
             margin: 1%;
-            border-radius: 5px;
             height: 38%;
             width: 20%;
             background-color: silver;
             display: inline-block;
             transition: background-color .3s;
+            background-color: silver;
 
-            p {
-                margin-top: 10px;
-                font-size: 1.3em;
-            }
-
-            .badge-name {
-                visibility: hidden;
-            }
-        }
-
-        .badge:hover {
-            background-color: white;
-            transition: background-color .3s;
-
-            .badge-name {
-                z-index: 999;
-                visibility: visible;
+            &:hover {
+                background-color: white;
+                transition: background-color .3s;
             }
         }
 
