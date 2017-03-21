@@ -10,12 +10,13 @@
 
     function LinksController($log) {
       var vm = this;
-      vm.bg = true;
+    //   vm.bg = true;
       vm.email = false;
       vm.github = false;
       vm.soundcloud = false;
       vm.twitter = false;
       vm.linkedin = false;
+
       $log.info('hello');
     }
 
