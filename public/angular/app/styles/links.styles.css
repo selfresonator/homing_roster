@@ -94,8 +94,7 @@ body .container .header-main {
 }
 /* line 83, ../../../scss/links.styles.scss */
 body .container .header-main .name {
-  font-family: Allerta Stencil;
-  font-variant: small-caps;
+  font-family: Helvetica;
   font-size: 2.5em;
   color: white;
   margin-bottom: -10px;
@@ -133,8 +132,7 @@ body .container .header-main .occupation {
 }
 /* line 111, ../../../scss/links.styles.scss */
 body .container .links {
-  font-family: Allerta Stencil;
-  font-variant: small-caps;
+  font-family: Helvetica;
   height: 165px;
   width: 320px;
   bottom: -1.5%;
