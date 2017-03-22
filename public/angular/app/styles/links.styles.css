@@ -1,4 +1,4 @@
-/* line 5, ../../../scss/links.styles.scss */
+/* line 7, ../../../scss/links.styles.scss */
 .flexcontainer {
   display: -webkit-flex;
   display: flex;
@@ -10,11 +10,11 @@
   justify-content: center;
 }
 
-/* line 16, ../../../scss/links.styles.scss */
+/* line 18, ../../../scss/links.styles.scss */
 body {
   background-color: black;
 }
-/* line 21, ../../../scss/links.styles.scss */
+/* line 23, ../../../scss/links.styles.scss */
 body .background {
   position: fixed;
   top: 0;
@@ -27,7 +27,7 @@ body .background {
   background-size: cover;
   background-position: center center;
 }
-/* line 33, ../../../scss/links.styles.scss */
+/* line 35, ../../../scss/links.styles.scss */
 body .intro {
   background-image: url("../../img/newmaze.jpg");
   opacity: 1 !important;
@@ -41,38 +41,38 @@ body .intro {
     opacity: 1;
   }
 }
-/* line 42, ../../../scss/links.styles.scss */
+/* line 44, ../../../scss/links.styles.scss */
 body .show {
   opacity: 1;
 }
-/* line 45, ../../../scss/links.styles.scss */
+/* line 47, ../../../scss/links.styles.scss */
 body .hide {
   opacity: 0;
 }
-/* line 48, ../../../scss/links.styles.scss */
+/* line 50, ../../../scss/links.styles.scss */
 body .github {
   background-image: url("../../img/code1.png");
 }
-/* line 51, ../../../scss/links.styles.scss */
+/* line 53, ../../../scss/links.styles.scss */
 body .twitter {
   background-image: url("../../img/tweets1.jpg");
 }
-/* line 54, ../../../scss/links.styles.scss */
+/* line 56, ../../../scss/links.styles.scss */
 body .linkedin {
   background-image: url("../../img/work1.jpg");
 }
-/* line 57, ../../../scss/links.styles.scss */
+/* line 59, ../../../scss/links.styles.scss */
 body .soundcloud {
   background-image: url("../../img/music1.jpg");
 }
-/* line 60, ../../../scss/links.styles.scss */
+/* line 62, ../../../scss/links.styles.scss */
 body .email {
   background-image: url("../../img/email1.jpg");
 }
-/* line 68, ../../../scss/links.styles.scss */
+/* line 70, ../../../scss/links.styles.scss */
 body .container .header-main {
   width: 100%;
-  margin-top: 20%;
+  top: 3%;
   position: absolute;
   font-family: Allerta;
   text-align: center;
@@ -80,19 +80,19 @@ body .container .header-main {
 }
 @keyframes appear {
   0% {
-    margin-top: 15%;
+    top: -2%;
     opacity: 0;
   }
   70% {
-    margin-top: 15%;
+    top: -2%;
     opacity: 0;
   }
   100% {
-    margin-top: 20%;
+    top: 3%;
     opacity: 1;
   }
 }
-/* line 81, ../../../scss/links.styles.scss */
+/* line 83, ../../../scss/links.styles.scss */
 body .container .header-main .name {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -100,14 +100,38 @@ body .container .header-main .name {
   color: white;
   margin-bottom: -10px;
 }
-/* line 88, ../../../scss/links.styles.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 83, ../../../scss/links.styles.scss */
+  body .container .header-main .name {
+    font-size: 4.5em;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  /* line 83, ../../../scss/links.styles.scss */
+  body .container .header-main .name {
+    font-size: 5em;
+  }
+}
+/* line 96, ../../../scss/links.styles.scss */
 body .container .header-main .occupation {
   font-family: Allerta Stencil;
   margin-right: 1%;
   color: white;
   font-size: 1.25em;
 }
-/* line 97, ../../../scss/links.styles.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 96, ../../../scss/links.styles.scss */
+  body .container .header-main .occupation {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  /* line 96, ../../../scss/links.styles.scss */
+  body .container .header-main .occupation {
+    font-size: 2.2em;
+  }
+}
+/* line 111, ../../../scss/links.styles.scss */
 body .container .links {
   font-family: Allerta Stencil;
   font-variant: small-caps;
@@ -132,7 +156,7 @@ body .container .links {
     opacity: 1;
   }
 }
-/* line 111, ../../../scss/links.styles.scss */
+/* line 125, ../../../scss/links.styles.scss */
 body .container .links .fa {
   color: white;
   padding: 10px;
@@ -142,11 +166,11 @@ body .container .links .fa {
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 119, ../../../scss/links.styles.scss */
+/* line 133, ../../../scss/links.styles.scss */
 body .container .links .fa:hover {
   color: #FF1177;
 }
-/* line 130, ../../../scss/links.styles.scss */
+/* line 144, ../../../scss/links.styles.scss */
 body .container .links a:link {
   text-decoration: none;
 }

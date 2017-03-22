@@ -1,3 +1,5 @@
+$break-med: 768px;
+$break-large: 1200px;
 @mixin allerta-stencil {
     font-family: Allerta Stencil;
     font-variant: small-caps;
@@ -61,21 +63,21 @@ body {
         background-image: url('../../img/email1.jpg');
     }
 
-    
+
     // LINKS CONTENT
     ////////////////////
     .container {
         .header-main {
             width: 100%;
-            margin-top: 20%;
+            top: 3%;
             position: absolute;
             font-family: Allerta;
             text-align: center;
             animation: appear 2.7s ease-out;
             @keyframes appear {
-                0% {margin-top: 15%; opacity: 0}
-                70% {margin-top: 15%; opacity: 0}
-                100% {margin-top: 20%; opacity: 1}
+                0% {top: -2%; opacity: 0}
+                70% {top: -2%; opacity: 0}
+                100% {top: 3%; opacity: 1}
             }
 
             .name {
@@ -83,6 +85,12 @@ body {
                 font-size: 2.5em;
                 color: white;
                 margin-bottom: -10px;
+                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    font-size: 4.5em;
+                }
+                @media only screen and (min-device-width : 1024px) {
+                    font-size: 5em;
+                }
             }
 
             .occupation {
@@ -90,6 +98,12 @@ body {
                 margin-right: 1%;
                 color: white;
                 font-size: 1.25em;
+                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    font-size: 2em;
+                }
+                @media only screen and (min-device-width : 1024px) {
+                    font-size: 2.2em;
+                }
             }
 
         }
