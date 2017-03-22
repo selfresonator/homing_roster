@@ -50,13 +50,13 @@ body {
         background-image: url('../../img/music1.jpg');
     }
     .linkedin {
-        background-image: url('../../img/work1.jpg');
+        // background-image: url('../../img/work1.jpg');
     }
     .soundcloud {
         background-image: url('../../img/musicthought1.jpg');
     }
     .email {
-        background-image: url('../../img/lilbaph.jpg');
+        // background-image: url('../../img/_______.jpg');
 
     }
 
@@ -67,8 +67,8 @@ body {
         .header-main {
             width: 100%;
             top: 3%;
+            margin-top: 0px;
             position: absolute;
-            font-family: Allerta;
             text-align: center;
             animation: appear 2.7s ease-out;
             @keyframes appear {
@@ -77,10 +77,20 @@ body {
                 100% {top: 3%; opacity: 1}
             }
 
+            @media only screen and (min-device-width : 1024px) {
+                top: -3%;
+                animation: appear1 2.7s ease-out;
+                @keyframes appear1 {
+                    0% {top: -5%; opacity: 0}
+                    70% {top: -5%; opacity: 0}
+                    100% {top: -3%; opacity: 1}
+                }
+            }
+
             .name {
-                font-family: Nobile;
+                font-family: Allerta Stencil;
                 font-size: 2.5em;
-                color: white;
+                color: silver;
                 margin-bottom: -10px;
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
                     font-size: 3.8em;
@@ -137,6 +147,7 @@ body {
                 transition: all 0.5s;
                 &:hover {
                     color: #FF1177;
+                    transform: scale(1.2);
                     // for glowing effect
                     // animation: neon1 1.5s ease-in-out infinite alternate;
                     // @-webkit-keyframes neon1 {

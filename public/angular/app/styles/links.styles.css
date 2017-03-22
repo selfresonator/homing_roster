@@ -57,24 +57,16 @@ body .github {
 body .twitter {
   background-image: url("../../img/music1.jpg");
 }
-/* line 52, ../../../scss/links.styles.scss */
-body .linkedin {
-  background-image: url("../../img/work1.jpg");
-}
 /* line 55, ../../../scss/links.styles.scss */
 body .soundcloud {
   background-image: url("../../img/musicthought1.jpg");
-}
-/* line 58, ../../../scss/links.styles.scss */
-body .email {
-  background-image: url("../../img/lilbaph.jpg");
 }
 /* line 67, ../../../scss/links.styles.scss */
 body .container .header-main {
   width: 100%;
   top: 3%;
+  margin-top: 0px;
   position: absolute;
-  font-family: Allerta;
   text-align: center;
   animation: appear 2.7s ease-out;
 }
@@ -92,54 +84,75 @@ body .container .header-main {
     opacity: 1;
   }
 }
-/* line 80, ../../../scss/links.styles.scss */
+@media only screen and (min-device-width: 1024px) {
+  /* line 67, ../../../scss/links.styles.scss */
+  body .container .header-main {
+    top: -3%;
+    animation: appear1 2.7s ease-out;
+  }
+  @keyframes appear1 {
+    0% {
+      top: -5%;
+      opacity: 0;
+    }
+    70% {
+      top: -5%;
+      opacity: 0;
+    }
+    100% {
+      top: -3%;
+      opacity: 1;
+    }
+  }
+}
+/* line 90, ../../../scss/links.styles.scss */
 body .container .header-main .name {
-  font-family: Nobile;
+  font-family: Allerta Stencil;
   font-size: 2.5em;
-  color: white;
+  color: silver;
   margin-bottom: -10px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 80, ../../../scss/links.styles.scss */
+  /* line 90, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 3.8em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 80, ../../../scss/links.styles.scss */
+  /* line 90, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 4em;
   }
 }
-/* line 93, ../../../scss/links.styles.scss */
+/* line 103, ../../../scss/links.styles.scss */
 body .container .header-main .occupation {
   margin-right: 1%;
   color: white;
   font-size: 1.3em;
 }
-/* line 98, ../../../scss/links.styles.scss */
+/* line 108, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .sax {
   font-family: Limelight;
   font-variant: small-caps;
   font-size: 1.3em !important;
 }
-/* line 103, ../../../scss/links.styles.scss */
+/* line 113, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .pro {
   font-family: Aldrich;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 93, ../../../scss/links.styles.scss */
+  /* line 103, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 1.9em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 93, ../../../scss/links.styles.scss */
+  /* line 103, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 2em;
   }
 }
-/* line 117, ../../../scss/links.styles.scss */
+/* line 127, ../../../scss/links.styles.scss */
 body .container .links {
   height: 165px;
   width: 320px;
@@ -162,7 +175,7 @@ body .container .links {
     opacity: 1;
   }
 }
-/* line 130, ../../../scss/links.styles.scss */
+/* line 140, ../../../scss/links.styles.scss */
 body .container .links .fa {
   color: white;
   padding: 10px;
@@ -172,11 +185,12 @@ body .container .links .fa {
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 138, ../../../scss/links.styles.scss */
+/* line 148, ../../../scss/links.styles.scss */
 body .container .links .fa:hover {
   color: #FF1177;
+  transform: scale(1.2);
 }
-/* line 149, ../../../scss/links.styles.scss */
+/* line 160, ../../../scss/links.styles.scss */
 body .container .links a:link {
   text-decoration: none;
 }
