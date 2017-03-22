@@ -16,7 +16,8 @@
       vm.soundcloud = false;
       vm.twitter = false;
       vm.linkedin = false;
-
+      vm.drive = false;
+      
       $log.info('hello');
     }
 

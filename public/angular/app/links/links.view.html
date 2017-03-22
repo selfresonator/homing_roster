@@ -4,6 +4,7 @@
 <div class="background soundcloud" ng-class="{'show': vm.soundcloud}"></div>
 <div class="background linkedin" ng-class="{'show': vm.linkedin}"></div>
 <div class="background email" ng-class="{'show': vm.email}"></div>
+<div class="background drive" ng-class="{'show': vm.drive}"></div>
 
 <section class="flexcontainer container">
     <div class="header-main">
@@ -28,6 +29,9 @@
             target="_top" class="fa fa-envelope fa-3x"
             ng-mouseenter="vm.email = true;"
             ng-mouseleave="vm.email = false;"></a>
+        <a href="#" class="fa fa-car fa-3x"
+            ng-mouseenter="vm.drive = true;"
+            ng-mouseleave="vm.drive = false;"></a>
             <!-- <a href="#" class="fa fa-instagram fa-3x"></a> -->
     </div>
 </section>
