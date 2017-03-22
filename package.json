@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "watch": "grunt spy",
-    "start": "nodemon"
+    "start": "nodemon",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
