@@ -1,9 +1,5 @@
 $break-med: 768px;
 $break-large: 1200px;
-@mixin allerta-stencil {
-    font-family: Allerta Stencil;
-    font-variant: small-caps;
-}
 .flexcontainer {
    display: -webkit-flex;
    display: flex;
@@ -33,7 +29,7 @@ body {
         background-position: center center;
     }
     .intro {
-        background-image: url('../../img/newmaze.jpg');
+        background-image: url('../../img/saturn.jpg');
         opacity: 1 !important;
         animation: bg 2s linear;
         @keyframes bg {
@@ -42,25 +38,28 @@ body {
         }
     }
     .show {
-        opacity: 1;
+        opacity: .7;
     }
     .hide {
-        opacity: 0;
+        opacity: 0 !important;
     }
     .github {
         background-image: url('../../img/code1.png');
     }
     .twitter {
-        background-image: url('../../img/tweets1.jpg');
-    }
-    .linkedin {
-        background-image: url('../../img/work1.jpg');
-    }
-    .soundcloud {
         background-image: url('../../img/music1.jpg');
     }
+    .linkedin {
+        // background-image: url('../../img/work1.jpg');
+    }
+    .soundcloud {
+        background-image: url('../../img/musicthought1.jpg');
+    }
     .email {
-        background-image: url('../../img/email1.jpg');
+        // background-image: url('../../img/_______.jpg');
+    }
+    .car {
+        background-image: url('../../img/Pagani1.jpg');
     }
 
 
@@ -70,8 +69,8 @@ body {
         .header-main {
             width: 100%;
             top: 3%;
+            margin-top: 0px;
             position: absolute;
-            font-family: Allerta;
             text-align: center;
             animation: appear 2.7s ease-out;
             @keyframes appear {
@@ -80,36 +79,55 @@ body {
                 100% {top: 3%; opacity: 1}
             }
 
+            @media only screen and (min-device-width : 1024px) {
+                top: -3%;
+                animation: appear1 2.7s ease-out;
+                @keyframes appear1 {
+                    0% {top: -5%; opacity: 0}
+                    70% {top: -5%; opacity: 0}
+                    100% {top: -3%; opacity: 1}
+                }
+            }
+
             .name {
-                @include allerta-stencil;
-                font-size: 2.5em;
-                color: white;
                 margin-bottom: -10px;
+                font-family: Allerta Stencil;
+                font-size: 2.5em;
+                text-shadow: 2px 2px black;
+                color: white;
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-                    font-size: 4.5em;
+                    font-size: 3.8em;
                 }
                 @media only screen and (min-device-width : 1024px) {
-                    font-size: 5em;
+                    font-size: 4em;
                 }
             }
 
             .occupation {
-                font-family: Allerta Stencil;
                 margin-right: 1%;
                 color: white;
-                font-size: 1.25em;
+                font-size: 1.3em;
+                text-shadow: 2px 2px black;
+                .sax {
+                    font-family: Limelight;
+                    font-variant: small-caps;
+                    font-size: 1.3em !important;
+                }
+                .pro {
+                    font-family: Aldrich;
+                }
+
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-                    font-size: 2em;
+                    font-size: 1.9em;
                 }
                 @media only screen and (min-device-width : 1024px) {
-                    font-size: 2.2em;
+                    font-size: 2em;
                 }
             }
 
         }
 
         .links {
-            @include allerta-stencil;
             height: 165px;
             width: 320px;
             bottom: -1.5%;
@@ -131,13 +149,34 @@ body {
                 text-decoration: none;
                 transition: all 0.5s;
                 &:hover {
-                    color: #FF1177;
-                    // for glowing effect
-                    // animation: neon1 1.5s ease-in-out infinite alternate;
-                    // @-webkit-keyframes neon1 {
-                    //     from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;}
-                    //     to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;}
-                    // }
+                    transform: scale(1.2);
+                }
+            }
+
+            .octocat {
+                &:hover {
+                    color: #FF1177 !important;
+                }
+            }
+            .green {
+                &:hover {
+                    color: green !important;
+                }
+            }
+            .tweet {
+                &:hover {
+                    color: #00aced !important;
+                }
+            }
+            .orange {
+                &:hover {
+                    color: #ff3a00 !important;
+                    text-shadow: 1px 1px 1px white;
+                }
+            }
+            .yellow {
+                &:hover {
+                    color: yellow !important;
                 }
             }
 
