@@ -1,10 +1,10 @@
-<div class="background intro" ng-class="{'hide': !vm.bg}"></div>
+<div class="background intro" ng-class="{'hide': vm.bg === false}"></div>
 <div class="background github" ng-class="{'show': vm.github}"></div>
 <div class="background twitter" ng-class="{'show': vm.twitter}"></div>
 <div class="background soundcloud" ng-class="{'show': vm.soundcloud}"></div>
 <div class="background linkedin" ng-class="{'show': vm.linkedin}"></div>
 <div class="background email" ng-class="{'show': vm.email}"></div>
-<div class="background drive" ng-class="{'show': vm.drive}"></div>
+<div class="background car" ng-class="{'show': vm.drive}"></div>
 
 <section class="flexcontainer container">
     <div class="header-main">
@@ -13,25 +13,25 @@
     </div>
 
     <div class="links">
-        <a href="https://github.com/selfresonator" class="fa fa-github fa-3x"
-            ng-mouseenter="vm.github = true;"
-            ng-mouseleave="vm.github = false;"></a>
-        <a href="https://twitter.com/_selfresonator" class="fa fa-twitter fa-3x"
-            ng-mouseenter="vm.twitter = true;"
-            ng-mouseleave="vm.twitter = false;"></a>
-        <a href="https://soundcloud.com/selfresonator" class="fa fa-soundcloud fa-3x"
-            ng-mouseenter="vm.soundcloud = true;"
-            ng-mouseleave="vm.soundcloud = false;"></a>
-        <a href="https://www.linkedin.com/in/ajfarleyengineer/" class="fa fa-linkedin fa-3x"
-            ng-mouseenter="vm.linkedin = true;"
-            ng-mouseleave="vm.linkedin = false;"></a>
+        <a href="https://github.com/selfresonator" class="fa octocat fa-github fa-3x"
+            ng-mouseenter="vm.github = true; vm.bg = false;"
+            ng-mouseleave="vm.github = false; vm.bg = true;"></a>
+        <a href="https://www.linkedin.com/in/ajfarleyengineer/" class="fa green fa-linkedin fa-3x"
+            ng-mouseenter="vm.linkedin = true; vm.bg = false;"
+            ng-mouseleave="vm.linkedin = false; vm.bg = true;"></a>
+        <a href="https://twitter.com/_selfresonator" class="fa tweet fa-twitter fa-3x"
+            ng-mouseenter="vm.twitter = true; vm.bg = false;"
+            ng-mouseleave="vm.twitter = false; vm.bg = true;"></a>
+        <a href="https://soundcloud.com/selfresonator" class="fa orange fa-soundcloud fa-3x"
+            ng-mouseenter="vm.soundcloud = true; vm.bg = false;"
+            ng-mouseleave="vm.soundcloud = false; vm.bg = true;"></a>
         <a href="mailto:selfresonator@gmail.com?Subject=Waddup%20G?!"
             target="_top" class="fa fa-envelope fa-3x"
-            ng-mouseenter="vm.email = true;"
-            ng-mouseleave="vm.email = false;"></a>
-        <a href="#" class="fa fa-car fa-3x"
-            ng-mouseenter="vm.drive = true;"
-            ng-mouseleave="vm.drive = false;"></a>
+            ng-mouseenter="vm.email = true; vm.bg = false;"
+            ng-mouseleave="vm.email = false; vm.bg = true;"></a>
+        <a href="#" class="fa yellow fa-car fa-3x"
+            ng-mouseenter="vm.drive = true; vm.bg = false;"
+            ng-mouseleave="vm.drive = false; vm.bg = true;"></a>
             <!-- <a href="#" class="fa fa-instagram fa-3x"></a> -->
     </div>
 </section>

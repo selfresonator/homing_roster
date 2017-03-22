@@ -38,10 +38,10 @@ body {
         }
     }
     .show {
-        opacity: 1;
+        opacity: .7;
     }
     .hide {
-        opacity: 0;
+        opacity: 0 !important;
     }
     .github {
         background-image: url('../../img/code1.png');
@@ -57,7 +57,9 @@ body {
     }
     .email {
         // background-image: url('../../img/_______.jpg');
-
+    }
+    .car {
+        background-image: url('../../img/Pagani1.jpg');
     }
 
 
@@ -88,10 +90,11 @@ body {
             }
 
             .name {
+                margin-bottom: -10px;
                 font-family: Allerta Stencil;
                 font-size: 2.5em;
-                color: silver;
-                margin-bottom: -10px;
+                text-shadow: 2px 2px black;
+                color: white;
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
                     font-size: 3.8em;
                 }
@@ -104,7 +107,7 @@ body {
                 margin-right: 1%;
                 color: white;
                 font-size: 1.3em;
-
+                text-shadow: 2px 2px black;
                 .sax {
                     font-family: Limelight;
                     font-variant: small-caps;
@@ -146,14 +149,34 @@ body {
                 text-decoration: none;
                 transition: all 0.5s;
                 &:hover {
-                    color: #FF1177;
                     transform: scale(1.2);
-                    // for glowing effect
-                    // animation: neon1 1.5s ease-in-out infinite alternate;
-                    // @-webkit-keyframes neon1 {
-                    //     from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;}
-                    //     to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;}
-                    // }
+                }
+            }
+
+            .octocat {
+                &:hover {
+                    color: #FF1177 !important;
+                }
+            }
+            .green {
+                &:hover {
+                    color: green !important;
+                }
+            }
+            .tweet {
+                &:hover {
+                    color: #00aced !important;
+                }
+            }
+            .orange {
+                &:hover {
+                    color: #ff3a00 !important;
+                    text-shadow: 1px 1px 1px white;
+                }
+            }
+            .yellow {
+                &:hover {
+                    color: yellow !important;
                 }
             }
 
