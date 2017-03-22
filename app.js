@@ -5,8 +5,7 @@ const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const publicPath = path.resolve(__dirname, 'public/angular/app');
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 //serving our index.html
