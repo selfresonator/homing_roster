@@ -63,13 +63,13 @@ body .linkedin {
 }
 /* line 55, ../../../scss/links.styles.scss */
 body .soundcloud {
-  background-image: url("../../img/music1.jpg");
+  background-image: url("../../img/musicthought1.jpg");
 }
 /* line 58, ../../../scss/links.styles.scss */
 body .email {
-  background-image: url("../../img/email1.jpg");
+  background-image: url("../../img/lilbaph.jpg");
 }
-/* line 66, ../../../scss/links.styles.scss */
+/* line 67, ../../../scss/links.styles.scss */
 body .container .header-main {
   width: 100%;
   top: 3%;
@@ -92,7 +92,7 @@ body .container .header-main {
     opacity: 1;
   }
 }
-/* line 79, ../../../scss/links.styles.scss */
+/* line 80, ../../../scss/links.styles.scss */
 body .container .header-main .name {
   font-family: Nobile;
   font-size: 2.5em;
@@ -100,46 +100,46 @@ body .container .header-main .name {
   margin-bottom: -10px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 79, ../../../scss/links.styles.scss */
+  /* line 80, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 3.8em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 79, ../../../scss/links.styles.scss */
+  /* line 80, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 4em;
   }
 }
-/* line 92, ../../../scss/links.styles.scss */
+/* line 93, ../../../scss/links.styles.scss */
 body .container .header-main .occupation {
   margin-right: 1%;
   color: white;
   font-size: 1.3em;
 }
-/* line 97, ../../../scss/links.styles.scss */
+/* line 98, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .sax {
   font-family: Limelight;
   font-variant: small-caps;
   font-size: 1.3em !important;
 }
-/* line 102, ../../../scss/links.styles.scss */
+/* line 103, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .pro {
   font-family: Aldrich;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 92, ../../../scss/links.styles.scss */
+  /* line 93, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 1.9em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 92, ../../../scss/links.styles.scss */
+  /* line 93, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 2em;
   }
 }
-/* line 116, ../../../scss/links.styles.scss */
+/* line 117, ../../../scss/links.styles.scss */
 body .container .links {
   height: 165px;
   width: 320px;
@@ -162,7 +162,7 @@ body .container .links {
     opacity: 1;
   }
 }
-/* line 129, ../../../scss/links.styles.scss */
+/* line 130, ../../../scss/links.styles.scss */
 body .container .links .fa {
   color: white;
   padding: 10px;
@@ -172,11 +172,11 @@ body .container .links .fa {
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 137, ../../../scss/links.styles.scss */
+/* line 138, ../../../scss/links.styles.scss */
 body .container .links .fa:hover {
   color: #FF1177;
 }
-/* line 148, ../../../scss/links.styles.scss */
+/* line 149, ../../../scss/links.styles.scss */
 body .container .links a:link {
   text-decoration: none;
 }
