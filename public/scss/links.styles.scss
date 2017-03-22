@@ -1,9 +1,5 @@
 $break-med: 768px;
 $break-large: 1200px;
-@mixin allerta-stencil {
-    font-family: Helvetica;
-    // font-variant: small-caps;
-}
 .flexcontainer {
    display: -webkit-flex;
    display: flex;
@@ -33,7 +29,7 @@ body {
         background-position: center center;
     }
     .intro {
-        background-image: url('../../img/newmaze.jpg');
+        background-image: url('../../img/saturn.jpg');
         opacity: 1 !important;
         animation: bg 2s linear;
         @keyframes bg {
@@ -51,7 +47,7 @@ body {
         background-image: url('../../img/code1.png');
     }
     .twitter {
-        background-image: url('../../img/tweets1.jpg');
+        background-image: url('../../img/music1.jpg');
     }
     .linkedin {
         background-image: url('../../img/work1.jpg');
@@ -81,35 +77,43 @@ body {
             }
 
             .name {
-                @include allerta-stencil;
+                font-family: Nobile;
                 font-size: 2.5em;
                 color: white;
                 margin-bottom: -10px;
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-                    font-size: 4.5em;
+                    font-size: 3.8em;
                 }
                 @media only screen and (min-device-width : 1024px) {
-                    font-size: 5em;
+                    font-size: 4em;
                 }
             }
 
             .occupation {
-                font-family: Allerta Stencil;
                 margin-right: 1%;
                 color: white;
-                font-size: 1.25em;
+                font-size: 1.3em;
+
+                .sax {
+                    font-family: Limelight;
+                    font-variant: small-caps;
+                    font-size: 1.3em !important;
+                }
+                .pro {
+                    font-family: Aldrich;
+                }
+
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-                    font-size: 2em;
+                    font-size: 1.9em;
                 }
                 @media only screen and (min-device-width : 1024px) {
-                    font-size: 2.2em;
+                    font-size: 2em;
                 }
             }
 
         }
 
         .links {
-            @include allerta-stencil;
             height: 165px;
             width: 320px;
             bottom: -1.5%;
