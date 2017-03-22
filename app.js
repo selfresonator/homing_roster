@@ -22,7 +22,3 @@ app.listen(PORT, (req,res) => {
   console.log('Initializing homing_roster');
   console.log('Server running on PORT ' + PORT);
 });
-
-// app.get('/', (req, res) => {
-//   res.send('INITIALIZED');
-// });
