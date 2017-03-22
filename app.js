@@ -23,6 +23,6 @@ app.listen(PORT, (req,res) => {
   console.log('Server running on PORT ' + PORT);
 });
 
-app.get('/', (req, res) => {
-  res.send('INITIALIZED');
-});
+// app.get('/', (req, res) => {
+//   res.send('INITIALIZED');
+// });
