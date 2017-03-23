@@ -1,11 +1,16 @@
 {
   "name": "homing_roster",
-  "version": "1.1.0",
+  "version": "1.1.2",
+  "engines": {
+    "node": "7.7.3",
+    "npm": "4.1.2"
+  },
   "description": "homing_roster",
   "main": "app.js",
   "scripts": {
     "watch": "grunt spy",
-    "start": "node app.js"
+    "start": "nodemon",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,7 @@
   "dependencies": {
     "angular-route": "^1.6.3",
     "body-parser": "^1.17.1",
+    "bower": "^1.8.0",
     "express": "^4.15.2",
     "helmet": "^3.5.0",
     "nodemon": "^1.11.0",
