@@ -11,7 +11,8 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: true
+        livereload: true,
+        // interrupt: true
       },
       clientViews: {
         files: [
@@ -23,7 +24,10 @@ module.exports = function(grunt) {
         ]
       },
       clientStyles: {
-        files: 'public/scss/*.scss',
+        files: [
+          'public/scss/*.scss',
+          'public/angular/app/styles/*.css'
+        ],
       }
     },
 
@@ -39,15 +43,15 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-        links: {
-            files: [{
-                expand: true,
-                cwd: 'public/angular/app/styles',
-                src: ['*.css', '!.min.css'],
-                dest: 'public/angular/app/styles',
-                ext: '.styles.min.css'
-            }]
-        }
+      links: {
+        files: [{
+            expand: true,
+            cwd: 'public/angular/app/styles',
+            src: ['*.css', '!.min.css'],
+            dest: 'public/angular/app/styles',
+            ext: '.styles.min.css'
+        }]
+      }
     },
 
     imagemin: {
@@ -76,5 +80,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('spy', ['watch']);
-  grunt.registerTask('default', ['nodemon:dev']);
+  grunt.registerTask('default', ['cssmin','nodemon:dev']);
 };
