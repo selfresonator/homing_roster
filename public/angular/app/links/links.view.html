@@ -5,6 +5,7 @@
 <div class="background linkedin" ng-class="{'show': vm.linkedin}"></div>
 <div class="background email" ng-class="{'show': vm.email}"></div>
 <div class="background car" ng-class="{'show': vm.car}"></div>
+<div class="background instagram" ng-class="{'show': vm.instagram}"></div>
 
 <section class="flexcontainer container">
     <div class="header-main" ng-style="{'color': vm.color}">
@@ -25,7 +26,9 @@
         <a href="https://soundcloud.com/selfresonator" class="fa orange fa-soundcloud fa-3x"
             ng-mouseenter="vm.soundcloudhv()"
             ng-mouseleave="vm.soundcloud = false; vm.bg = true; vm.color = 'white'"></a>
-        <a href="#" class="fa fa-instagram fa-3x"></a>
+        <a href="#" class="fa fa-instagram fa-3x"
+            ng-mouseenter="vm.instagramhv()"
+            ng-mouseleave="vm.instagram = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="#" class="fa yellow fa-flag-checkered fa-3x"
             ng-mouseenter="vm.carhv()"
             ng-mouseleave="vm.car = false; vm.bg = true; vm.color = 'white'"></a>

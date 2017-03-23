@@ -17,6 +17,7 @@
       vm.soundcloud = false;
       vm.twitter = false;
       vm.linkedin = false;
+      vm.instagram = false;
       vm.car = false;
 
       vm.githubhv = githubhv;
@@ -25,6 +26,7 @@
       vm.linkedinhv = linkedinhv;
       vm.carhv = carhv;
       vm.emailhv = emailhv;
+      vm.instagramhv = instagramhv;
 
       function githubhv() {
           vm.github = true;
@@ -49,6 +51,11 @@
       function carhv() {
           vm.car = true;
           vm.color = 'gold';
+          vm.bg = false;
+      }
+      function instagramhv() {
+          vm.instagram = true;
+          vm.color = 'silver';
           vm.bg = false;
       }
       function emailhv() {
