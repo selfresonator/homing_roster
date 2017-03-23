@@ -43,7 +43,7 @@ body .intro {
 }
 /* line 40, ../../../scss/links.styles.scss */
 body .show {
-  opacity: .7;
+  opacity: 1;
 }
 /* line 43, ../../../scss/links.styles.scss */
 body .hide {
@@ -63,7 +63,7 @@ body .soundcloud {
 }
 /* line 61, ../../../scss/links.styles.scss */
 body .car {
-  background-image: url("../../img/Pagani1.jpg");
+  background-image: url("../../img/lam.jpg");
 }
 /* line 69, ../../../scss/links.styles.scss */
 body .container .header-main {
@@ -72,7 +72,9 @@ body .container .header-main {
   margin-top: 0px;
   position: absolute;
   text-align: center;
+  color: white;
   animation: appear 2.7s ease-out;
+  transition: color .5s;
 }
 @keyframes appear {
   0% {
@@ -109,30 +111,28 @@ body .container .header-main {
     }
   }
 }
-/* line 92, ../../../scss/links.styles.scss */
+/* line 94, ../../../scss/links.styles.scss */
 body .container .header-main .name {
   margin-bottom: -10px;
   font-family: Allerta Stencil;
   font-size: 2.5em;
   text-shadow: 2px 2px black;
-  color: white;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 92, ../../../scss/links.styles.scss */
+  /* line 94, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 3.8em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 92, ../../../scss/links.styles.scss */
+  /* line 94, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 4em;
   }
 }
-/* line 106, ../../../scss/links.styles.scss */
+/* line 107, ../../../scss/links.styles.scss */
 body .container .header-main .occupation {
   margin-right: 1%;
-  color: white;
   font-size: 1.3em;
   text-shadow: 2px 2px black;
 }
@@ -147,13 +147,13 @@ body .container .header-main .occupation .pro {
   font-family: Aldrich;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 106, ../../../scss/links.styles.scss */
+  /* line 107, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 1.9em;
   }
 }
 @media only screen and (min-device-width: 1024px) {
-  /* line 106, ../../../scss/links.styles.scss */
+  /* line 107, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 2em;
   }
@@ -197,7 +197,7 @@ body .container .links .fa:hover {
 }
 /* line 157, ../../../scss/links.styles.scss */
 body .container .links .octocat:hover {
-  color: #FF1177 !important;
+  color: red !important;
 }
 /* line 162, ../../../scss/links.styles.scss */
 body .container .links .green:hover {
@@ -214,9 +214,17 @@ body .container .links .orange:hover {
 }
 /* line 178, ../../../scss/links.styles.scss */
 body .container .links .yellow:hover {
-  color: yellow !important;
+  color: gold !important;
 }
 /* line 183, ../../../scss/links.styles.scss */
+body .container .links .tan:hover {
+  color: tan !important;
+}
+/* line 188, ../../../scss/links.styles.scss */
 body .container .links a:link {
   text-decoration: none;
+}
+/* line 193, ../../../scss/links.styles.scss */
+body .container .github-color {
+  color: #FF1177;
 }

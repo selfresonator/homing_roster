@@ -4,34 +4,34 @@
 <div class="background soundcloud" ng-class="{'show': vm.soundcloud}"></div>
 <div class="background linkedin" ng-class="{'show': vm.linkedin}"></div>
 <div class="background email" ng-class="{'show': vm.email}"></div>
-<div class="background car" ng-class="{'show': vm.drive}"></div>
+<div class="background car" ng-class="{'show': vm.car}"></div>
 
 <section class="flexcontainer container">
-    <div class="header-main">
+    <div class="header-main" ng-style="{'color': vm.color}">
         <p class="name">A.J. Farley</p>
         <p class="occupation"><span class="sax">Saxophonist</span> | <span class="pro">Programmer</span></p>
     </div>
 
     <div class="links">
         <a href="https://github.com/selfresonator" class="fa octocat fa-github fa-3x"
-            ng-mouseenter="vm.github = true; vm.bg = false;"
-            ng-mouseleave="vm.github = false; vm.bg = true;"></a>
+            ng-mouseenter="vm.githubhv()"
+            ng-mouseleave="vm.github = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="https://www.linkedin.com/in/ajfarleyengineer/" class="fa green fa-linkedin fa-3x"
-            ng-mouseenter="vm.linkedin = true; vm.bg = false;"
-            ng-mouseleave="vm.linkedin = false; vm.bg = true;"></a>
+            ng-mouseenter="vm.linkedinhv()"
+            ng-mouseleave="vm.linkedin = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="https://twitter.com/_selfresonator" class="fa tweet fa-twitter fa-3x"
-            ng-mouseenter="vm.twitter = true; vm.bg = false;"
-            ng-mouseleave="vm.twitter = false; vm.bg = true;"></a>
+            ng-mouseenter="vm.twitterhv()"
+            ng-mouseleave="vm.twitter = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="https://soundcloud.com/selfresonator" class="fa orange fa-soundcloud fa-3x"
-            ng-mouseenter="vm.soundcloud = true; vm.bg = false;"
-            ng-mouseleave="vm.soundcloud = false; vm.bg = true;"></a>
+            ng-mouseenter="vm.soundcloudhv()"
+            ng-mouseleave="vm.soundcloud = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="mailto:selfresonator@gmail.com?Subject=Waddup%20G?!"
-            target="_top" class="fa fa-envelope fa-3x"
-            ng-mouseenter="vm.email = true; vm.bg = false;"
-            ng-mouseleave="vm.email = false; vm.bg = true;"></a>
-        <a href="#" class="fa yellow fa-car fa-3x"
-            ng-mouseenter="vm.drive = true; vm.bg = false;"
-            ng-mouseleave="vm.drive = false; vm.bg = true;"></a>
+            target="_top" class="fa tan fa-envelope fa-3x"
+            ng-mouseenter="vm.emailhv()"
+            ng-mouseleave="vm.email = false; vm.bg = true; vm.color = 'white'"></a>
+        <a href="#" class="fa yellow fa-flag-checkered fa-3x"
+            ng-mouseenter="vm.carhv()"
+            ng-mouseleave="vm.car = false; vm.bg = true; vm.color = 'white'"></a>
             <!-- <a href="#" class="fa fa-instagram fa-3x"></a> -->
     </div>
 </section>

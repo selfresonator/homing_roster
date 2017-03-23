@@ -38,7 +38,7 @@ body {
         }
     }
     .show {
-        opacity: .7;
+        opacity: 1;
     }
     .hide {
         opacity: 0 !important;
@@ -59,7 +59,7 @@ body {
         // background-image: url('../../img/_______.jpg');
     }
     .car {
-        background-image: url('../../img/Pagani1.jpg');
+        background-image: url('../../img/lam.jpg');
     }
 
 
@@ -72,7 +72,9 @@ body {
             margin-top: 0px;
             position: absolute;
             text-align: center;
+            color: white;
             animation: appear 2.7s ease-out;
+            transition: color .5s;
             @keyframes appear {
                 0% {top: -2%; opacity: 0}
                 70% {top: -2%; opacity: 0}
@@ -94,7 +96,6 @@ body {
                 font-family: Allerta Stencil;
                 font-size: 2.5em;
                 text-shadow: 2px 2px black;
-                color: white;
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
                     font-size: 3.8em;
                 }
@@ -105,7 +106,6 @@ body {
 
             .occupation {
                 margin-right: 1%;
-                color: white;
                 font-size: 1.3em;
                 text-shadow: 2px 2px black;
                 .sax {
@@ -155,7 +155,7 @@ body {
 
             .octocat {
                 &:hover {
-                    color: #FF1177 !important;
+                    color: red !important;
                 }
             }
             .green {
@@ -176,13 +176,22 @@ body {
             }
             .yellow {
                 &:hover {
-                    color: yellow !important;
+                    color: gold !important;
+                }
+            }
+            .tan {
+                &:hover {
+                    color: tan !important;
                 }
             }
 
             a:link {
                 text-decoration: none;
             }
+        }
+
+        .github-color {
+            color: #FF1177;
         }
     }
 
