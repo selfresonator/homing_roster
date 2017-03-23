@@ -19,6 +19,7 @@
       vm.linkedin = false;
       vm.instagram = false;
       vm.car = false;
+      vm.about = false;
 
       vm.githubhv = githubhv;
       vm.twitterhv = twitterhv;
@@ -27,6 +28,8 @@
       vm.carhv = carhv;
       vm.emailhv = emailhv;
       vm.instagramhv = instagramhv;
+      vm.altAbout = altAbout;
+      vm.closeAbout = closeAbout;
 
       function githubhv() {
           vm.github = true;
@@ -63,6 +66,15 @@
         //   vm.color = 'tan';
           vm.bg = false;
       }
+      function altAbout() {
+          vm.about = true;
+          console.log('clicked');
+      }
+      function closeAbout() {
+          vm.about = false;
+          console.log('clicked close ');
+      }
+
 
       $log.info('hello');
     }

@@ -269,7 +269,7 @@ body .container .footer {
   position: fixed;
 }
 /* line 230, ../../../scss/links.styles.scss */
-body .container .footer p {
+body .container .footer .copyright {
   height: 50px;
   width: 80px;
   font-family: Michroma;
@@ -277,11 +277,27 @@ body .container .footer p {
 }
 @media (max-device-width: 767px) {
   /* line 230, ../../../scss/links.styles.scss */
-  body .container .footer p {
+  body .container .footer .copyright {
     display: none;
   }
 }
 /* line 241, ../../../scss/links.styles.scss */
 body .container .github-color {
   color: #FF1177;
+}
+/* line 244, ../../../scss/links.styles.scss */
+body .container .about {
+  background-color: tan;
+  bottom: -90%;
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+  display: block;
+}
+/* line 254, ../../../scss/links.styles.scss */
+body .container .showAbout {
+  transition: all 1s ease-in-out;
+  bottom: -20%;
 }

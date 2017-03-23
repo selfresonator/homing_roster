@@ -8,12 +8,12 @@
 <div class="background instagram" ng-class="{'show': vm.instagram}"></div>
 
 <section class="flexcontainer container">
-    <div class="header-main" ng-style="{'color': vm.color}">
+    <section class="header-main" ng-style="{'color': vm.color}">
         <p class="name">A.J. Farley</p>
         <p class="occupation"><span class="sax">Saxophonist</span> | <span class="pro">Programmer</span></p>
-    </div>
+    </section>
 
-    <div class="links">
+    <section class="links">
         <a href="https://github.com/selfresonator" class="fa octocat fa-github fa-3x"
             ng-mouseenter="vm.githubhv()"
             ng-mouseleave="vm.github = false; vm.bg = true; vm.color = 'white'"></a>
@@ -36,10 +36,15 @@
             target="_top" class="fa tan fa-envelope fa-3x"
             ng-mouseenter="vm.emailhv()"
             ng-mouseleave="vm.email = false; vm.bg = true; vm.color = 'white'"></a>
-    </div>
+    </section>
 
     <footer class="footer" ng-style="{'color': vm.color}">
-        <p > &#169; 2017 AJ Farley</p>
+        <p class="copyright"> &#169; 2017 AJ Farley</p>
     </footer>
-    <a href="#" class="fa caret fa-caret-down fa-2x" ng-style="{'color': vm.color}"></a>
+    <a class="fa caret fa-caret-down fa-2x" ng-style="{'color': vm.color}"
+        ng-click="vm.altAbout()"></a>
+    <aside class="about" ng-class="{'showAbout': vm.about}">
+        <a class="fa fa-angle-down fa-2x" ng-style="{'color': vm.color}"
+            ng-click="vm.closeAbout()"></a>
+    </aside>
 </section>
