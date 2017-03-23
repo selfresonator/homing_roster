@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -35,6 +36,18 @@ module.exports = function(grunt) {
           watch: true
         },
       }
+    },
+
+    cssmin: {
+        links: {
+            files: [{
+                expand: true,
+                cwd: 'public/angular/app/styles',
+                src: ['*.css', '!.min.css'],
+                dest: 'public/angular/app/styles',
+                ext: '.styles.min.css'
+            }]
+        }
     },
 
     imagemin: {
