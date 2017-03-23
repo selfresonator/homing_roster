@@ -73,8 +73,8 @@ body {
             position: absolute;
             text-align: center;
             color: white;
-            animation: appear 2.7s ease-out;
             transition: color .5s;
+            animation: appear 2.7s ease-out;
             @keyframes appear {
                 0% {top: -2%; opacity: 0}
                 70% {top: -2%; opacity: 0}
@@ -82,12 +82,14 @@ body {
             }
 
             @media only screen and (min-device-width : 1024px) {
-                top: -3%;
+                text-align: left;
+                left: 2%;
+                top: -2%;
                 animation: appear1 2.7s ease-out;
                 @keyframes appear1 {
                     0% {top: -5%; opacity: 0}
                     70% {top: -5%; opacity: 0}
-                    100% {top: -3%; opacity: 1}
+                    100% {top: -2%; opacity: 1}
                 }
             }
 
@@ -100,7 +102,7 @@ body {
                     font-size: 3.8em;
                 }
                 @media only screen and (min-device-width : 1024px) {
-                    font-size: 4em;
+                    font-size: 2.1em;
                 }
             }
 
@@ -120,9 +122,9 @@ body {
                 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
                     font-size: 1.9em;
                 }
-                @media only screen and (min-device-width : 1024px) {
-                    font-size: 2em;
-                }
+                // @media only screen and (min-device-width : 1024px) {
+                //     font-size: 2em;
+                // }
             }
 
         }
@@ -194,7 +196,7 @@ body {
             color: white;
             z-index: 100;
             bottom: 0%;
-            left: 3%;
+            left: 2%;
             position: fixed;
 
             p {

@@ -85,5 +85,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('spy', ['watch']);
-  grunt.registerTask('default', ['cssmin','nodemon:dev']);
+  grunt.registerTask('default', ['nodemon:dev']);
 };
