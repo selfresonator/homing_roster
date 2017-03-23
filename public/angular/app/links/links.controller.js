@@ -60,7 +60,7 @@
       }
       function emailhv() {
           vm.email = true;
-          vm.color = 'tan';
+        //   vm.color = 'tan';
           vm.bg = false;
       }
 

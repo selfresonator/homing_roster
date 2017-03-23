@@ -81,6 +81,10 @@ body .twitter {
 body .soundcloud {
   background-image: url("../../img/musicthought1.jpg");
 }
+/* line 71, ../../../scss/links.styles.scss */
+body .email {
+  background-image: url("../../img/baphomet.png");
+}
 /* line 74, ../../../scss/links.styles.scss */
 body .car {
   background-image: url("../../img/lam.jpg");
@@ -247,10 +251,6 @@ body .container .links .orange:hover {
 /* line 203, ../../../scss/links.styles.scss */
 body .container .links .yellow:hover {
   color: gold !important;
-}
-/* line 208, ../../../scss/links.styles.scss */
-body .container .links .tan:hover {
-  color: tan !important;
 }
 /* line 213, ../../../scss/links.styles.scss */
 body .container .links .instagram:hover {
