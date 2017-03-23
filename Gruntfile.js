@@ -12,16 +12,21 @@ module.exports = function(grunt) {
     watch: {
       options: {
         livereload: true,
-        // interrupt: true
       },
-      clientViews: {
+      clientjs: {
         files: [
           'public/angular/app/*.js',
-          'public/angular/app/*.html',
           'public/angular/app/links/*.js',
+          'public/angular/app/links/links.js',
+          'Gruntfile.js'
+        ],
+      },
+      clienthtml: {
+        files: [
+          'public/angular/app/*.html',
           'public/angular/app/links/*.html',
           'Gruntfile.js'
-        ]
+        ],
       },
       clientStyles: {
         files: [

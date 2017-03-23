@@ -190,6 +190,24 @@ body {
             }
         }
 
+        .footer {
+            color: white;
+            z-index: 100;
+            bottom: 0%;
+            left: 5%;
+            position: fixed;
+
+            p {
+                height: 50px;
+                width: 80px;
+                font-family: Michroma;
+                font-size: .75em;
+                @media (max-device-width : 767px) {
+                    display: none;
+                }
+            }
+        }
+
         .github-color {
             color: #FF1177;
         }
