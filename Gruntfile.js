@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -71,6 +72,18 @@ module.exports = function(grunt) {
           dest: 'public/angular/app/img'
         }]
       }
+    },
+
+    postcss: {
+        options: {
+            processors: [
+              require('autoprefixer')({browsers: ['last 3 versions']}),
+            ]
+        },
+        dist: {
+            src: 'public/angular/app/styles/links.styles.css',
+            dest: 'public/angular/app/styles/links.styles.css'
+        }
     },
 
     nodemon: {
