@@ -12,7 +12,19 @@ $break-large: 1200px;
 }
 
 body {
+    .caret {
+        color: white;
+        position: absolute;
+        bottom: 2%;
+        right: 3%;
+        text-decoration: none;
+        animation: repeat .6s ease-out infinite;
+        @keyframes repeat {
+            0% {bottom: 2%; opacity: 0}
+            100% {bottom: 0%; opacity: 1}
+        }
 
+    }
     // BACKGROUND IMAGES
     ////////////////////
     background-color: black;
@@ -31,6 +43,7 @@ body {
     .intro {
         background-image: url('../../img/saturn.jpg');
         opacity: 1 !important;
+        z-index: -1000;
         animation: bg 2s linear;
         @keyframes bg {
             0% {opacity: 0}
