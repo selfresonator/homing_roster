@@ -12,19 +12,6 @@ $break-large: 1200px;
 }
 
 body {
-    .caret {
-        color: white;
-        position: absolute;
-        bottom: 2%;
-        right: 3%;
-        text-decoration: none;
-        animation: repeat .6s ease-out infinite;
-        @keyframes repeat {
-            0% {bottom: 2%; opacity: 0}
-            100% {bottom: 0%; opacity: 1}
-        }
-
-    }
     // BACKGROUND IMAGES
     ////////////////////
     background-color: black;
@@ -161,7 +148,6 @@ body {
                 height: 155px;
             }
 
-
             .fa {
                 color: white;
                 padding: 10px;
@@ -220,6 +206,44 @@ body {
             }
         }
 
+
+        // ABOUT AND COPYRIGHT
+        ////////////////////
+        .caret {
+            color: white;
+            position: absolute;
+            bottom: 2%;
+            right: 3%;
+            text-decoration: none;
+            animation: repeat .6s ease-out infinite;
+            @keyframes repeat {
+                0% {bottom: 2%; opacity: 0}
+                100% {bottom: 0%; opacity: 1}
+            }
+
+        }
+
+        .close-caret {
+            top: 71%;
+            position: absolute;
+            right: 3%;
+        }
+
+        .about {
+            background-color: tan;
+            bottom: -90%;
+            position: fixed;
+            width: 100%;
+            height: 90%;
+            z-index: 100;
+            transition: all .6s ease-in-out;
+            display: block;
+        }
+
+        .showAbout {
+            bottom: -20%;
+        }
+
         .footer {
             color: white;
             z-index: 100;
@@ -236,26 +260,9 @@ body {
                     display: none;
                 }
             }
+
         }
 
-        .github-color {
-            color: #FF1177;
-        }
-        .about {
-            background-color: tan;
-            bottom: -90%;
-            position: fixed;
-            width: 100%;
-            height: 90%;
-            z-index: 100;
-            transition: all 1s ease-in-out;
-            display: block;
-        }
-        .showAbout {
-            transition: all 1s ease-in-out;
-            bottom: -20%;
-        }
     }
-
 
 }

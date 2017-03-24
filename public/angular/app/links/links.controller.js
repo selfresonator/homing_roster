@@ -68,13 +68,10 @@
       }
       function altAbout() {
           vm.about = true;
-          console.log('clicked');
       }
       function closeAbout() {
           vm.about = false;
-          console.log('clicked close ');
       }
-
 
       $log.info('hello');
     }
