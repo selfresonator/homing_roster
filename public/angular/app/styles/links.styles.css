@@ -1,13 +1,18 @@
 /* line 3, ../../../scss/links.styles.scss */
 .flexcontainer {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* line 14, ../../../scss/links.styles.scss */
@@ -22,8 +27,10 @@ body .background {
   left: 0;
   right: 0;
   opacity: 0;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
 }
@@ -32,7 +39,16 @@ body .intro {
   background-image: url("../../img/saturn.jpg");
   opacity: 1 !important;
   z-index: -1000;
-  animation: bg 2s linear;
+  -webkit-animation: bg 2s linear;
+          animation: bg 2s linear;
+}
+@-webkit-keyframes bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes bg {
   0% {
@@ -82,8 +98,24 @@ body .container .header-main {
   position: absolute;
   text-align: center;
   color: white;
+  -webkit-transition: color .5s;
   transition: color .5s;
-  animation: appear 2.7s ease-out;
+  -webkit-animation: appear 2.7s ease-out;
+          animation: appear 2.7s ease-out;
+}
+@-webkit-keyframes appear {
+  0% {
+    top: -2%;
+    opacity: 0;
+  }
+  70% {
+    top: -2%;
+    opacity: 0;
+  }
+  100% {
+    top: 3%;
+    opacity: 1;
+  }
 }
 @keyframes appear {
   0% {
@@ -105,7 +137,22 @@ body .container .header-main {
     text-align: left;
     left: 2%;
     top: -2%;
-    animation: appear1 2.7s ease-out;
+    -webkit-animation: appear1 2.7s ease-out;
+            animation: appear1 2.7s ease-out;
+  }
+  @-webkit-keyframes appear1 {
+    0% {
+      top: -5%;
+      opacity: 0;
+    }
+    70% {
+      top: -5%;
+      opacity: 0;
+    }
+    100% {
+      top: -2%;
+      opacity: 1;
+    }
   }
   @keyframes appear1 {
     0% {
@@ -170,7 +217,22 @@ body .container .links {
   bottom: -1.5%;
   position: absolute;
   text-align: center;
-  animation: links 2.5s ease-out;
+  -webkit-animation: links 2.5s ease-out;
+          animation: links 2.5s ease-out;
+}
+@-webkit-keyframes links {
+  0% {
+    bottom: -4%;
+    opacity: 0;
+  }
+  70% {
+    bottom: -4%;
+    opacity: 0;
+  }
+  100% {
+    bottom: -1.5%;
+    opacity: 1;
+  }
 }
 @keyframes links {
   0% {
@@ -200,11 +262,13 @@ body .container .links .fa {
   width: 50px;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 /* line 159, ../../../scss/links.styles.scss */
 body .container .links .fa:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media only screen and (min-device-width: 1024px) {
   /* line 151, ../../../scss/links.styles.scss */
@@ -248,7 +312,18 @@ body .container .caret {
   bottom: 2%;
   right: 3%;
   text-decoration: none;
-  animation: repeat .6s ease-out infinite;
+  -webkit-animation: repeat .6s ease-out infinite;
+          animation: repeat .6s ease-out infinite;
+}
+@-webkit-keyframes repeat {
+  0% {
+    bottom: 2%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
 }
 @keyframes repeat {
   0% {
@@ -274,6 +349,7 @@ body .container .about {
   width: 100%;
   height: 90%;
   z-index: 100;
+  -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
   display: block;
 }

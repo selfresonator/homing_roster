@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-postcss');
 
   grunt.initConfig({
@@ -26,14 +27,13 @@ module.exports = function(grunt) {
         files: [
           'public/angular/app/*.html',
           'public/angular/app/links/*.html',
-          'Gruntfile.js'
         ],
       },
       clientStyles: {
         files: [
           'public/scss/*.scss',
-          'public/angular/app/styles/*.css'
         ],
+        tasks: ['clean','compass:dev','postcss:dist', 'cssmin:links']
       }
     },
 
@@ -43,9 +43,21 @@ module.exports = function(grunt) {
           sassDir: 'public/scss',
           cssDir: 'public/angular/app/styles',
           environment: 'development',
-          watch: true
+        //   watch: true
         },
       }
+    },
+
+    postcss: {
+        options: {
+            processors: [
+                require('autoprefixer')(),
+            ]
+        },
+        dist: {
+            src: 'public/angular/app/styles/links.styles.css',
+            dest: 'public/angular/app/styles/links.styles.css'
+        }
     },
 
     cssmin: {
@@ -74,18 +86,6 @@ module.exports = function(grunt) {
       }
     },
 
-    postcss: {
-        options: {
-            processors: [
-              require('autoprefixer')({browsers: ['last 3 versions']}),
-            ]
-        },
-        dist: {
-            src: 'public/angular/app/styles/links.styles.css',
-            dest: 'public/angular/app/styles/links.styles.css'
-        }
-    },
-
     nodemon: {
       dev: {
         script: 'app.js',
@@ -94,7 +94,9 @@ module.exports = function(grunt) {
         },
         watch: ['server'],
       }
-    }
+    },
+
+    clean: ['public/angular/app/styles/links.styles.min.css']
   });
 
   grunt.registerTask('spy', ['watch']);
