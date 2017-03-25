@@ -414,18 +414,49 @@ body .container .about .close-caret {
 /* line 276, ../../../scss/links.styles.scss */
 body .container .about .about-div {
   margin: 4.5%;
+  text-align: center;
 }
-/* line 278, ../../../scss/links.styles.scss */
+/* line 280, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-header {
+  margin-bottom: 5%;
   font-size: 1.8em;
   font-family: Rationale;
   font-variant: small-caps;
 }
-/* line 283, ../../../scss/links.styles.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 280, ../../../scss/links.styles.scss */
+  body .container .about .about-div .about-header {
+    font-size: 2.7em;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  /* line 280, ../../../scss/links.styles.scss */
+  body .container .about .about-div .about-header {
+    font-size: 1.9em;
+  }
+}
+/* line 293, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-info {
   font-family: Metrophobic;
+  font-size: .9em;
 }
-/* line 289, ../../../scss/links.styles.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 293, ../../../scss/links.styles.scss */
+  body .container .about .about-div .about-info {
+    font-size: 1.55em;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  /* line 293, ../../../scss/links.styles.scss */
+  body .container .about .about-div .about-info {
+    font-size: .95em;
+  }
+}
+/* line 304, ../../../scss/links.styles.scss */
+body .container .about .about-div hr {
+  width: 90%;
+}
+/* line 311, ../../../scss/links.styles.scss */
 body .container .showAbout {
   bottom: -20%;
 }

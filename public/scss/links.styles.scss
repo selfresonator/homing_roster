@@ -275,14 +275,36 @@ body {
 
             .about-div {
                 margin: 4.5%;
+                text-align: center;
+
                 .about-header {
+                    margin-bottom: 5%;
                     font-size: 1.8em;
                     font-family: Rationale;
                     font-variant: small-caps;
+                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                        font-size: 2.7em ;
+                    }
+                    @media only screen and (min-device-width : 1024px) {
+                        font-size: 1.9em;
+                    }
                 }
+
                 .about-info {
                     font-family: Metrophobic;
+                    font-size: .9em;
+                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                        font-size: 1.55em ;
+                    }
+                    @media only screen and (min-device-width : 1024px) {
+                        font-size: .95em;
+                    }
                 }
+
+                hr {
+                    width: 90%;
+                }
+
             }
         }
 
