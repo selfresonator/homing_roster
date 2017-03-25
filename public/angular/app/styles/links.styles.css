@@ -334,27 +334,27 @@ body .container .caret {
   bottom: 2%;
   right: 3%;
   text-decoration: none;
-  -webkit-animation: repeat .6s ease-out infinite;
-          animation: repeat .6s ease-out infinite;
+  -webkit-animation: repeat .6s ease-in infinite;
+          animation: repeat .6s ease-in infinite;
 }
 @-webkit-keyframes repeat {
   100% {
     bottom: 2%;
-    opacity: 0;
+    opacity: 1;
   }
   0% {
     bottom: 0%;
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes repeat {
   100% {
     bottom: 2%;
-    opacity: 0;
+    opacity: 1;
   }
   0% {
     bottom: 0%;
-    opacity: 1;
+    opacity: 0;
   }
 }
 /* line 246, ../../../scss/links.styles.scss */
@@ -388,21 +388,21 @@ body .container .about .close-caret {
 @-webkit-keyframes close-repeat {
   0% {
     top: 69%;
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     top: 71%;
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes close-repeat {
   0% {
     top: 69%;
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     top: 71%;
-    opacity: 1;
+    opacity: 0;
   }
 }
 @media only screen and (min-device-width: 1024px) {

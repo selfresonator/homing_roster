@@ -235,10 +235,10 @@ body {
             bottom: 2%;
             right: 3%;
             text-decoration: none;
-            animation: repeat .6s ease-out infinite;
+            animation: repeat .6s ease-in infinite;
             @keyframes repeat {
-                100% {bottom: 2%; opacity: 0}
-                0% {bottom: 0%; opacity: 1}
+                100% {bottom: 2%; opacity: 1}
+                0% {bottom: 0%; opacity: 0}
             }
 
         }
@@ -265,8 +265,8 @@ body {
                 right: 3%;
                 animation: close-repeat .6s ease-out infinite;
                 @keyframes close-repeat {
-                    0% {top: 69%; opacity: 0}
-                    100% {top: 71%; opacity: 1}
+                    0% {top: 69%; opacity: 1}
+                    100% {top: 71%; opacity: 0}
                 }
                 @media only screen and (min-device-width : 1024px) {
                     right: 9%;

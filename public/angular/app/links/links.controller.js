@@ -7,7 +7,7 @@
 
     LinksController.$inject = ['$log'];
 
-    function LinksController($log) {
+    function LinksController($log, $event) {
       var vm = this;
       vm.hovered = '';
       vm.color = '';
@@ -66,7 +66,8 @@
         //   vm.color = 'tan';
           vm.bg = false;
       }
-      function altAbout() {
+      function altAbout($event) {
+          $event.stopPropagation();
           vm.about = true;
       }
       function closeAbout() {

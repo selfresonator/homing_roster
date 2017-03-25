@@ -1,3 +1,4 @@
+<main ng-click="vm.closeAbout()">
 <div class="background intro" ng-class="{'hide': vm.bg === false}"></div>
 <div class="background github" ng-class="{'show': vm.github}"></div>
 <div class="background twitter" ng-class="{'show': vm.twitter}"></div>
@@ -42,14 +43,14 @@
         <p class="copyright"> &#169; 2017 A.J. Farley</p>
     </footer>
     <a class="fa caret fa-caret-up fa-2x" ng-style="{'color': vm.color}"
-        ng-click="vm.altAbout()"></a>
-    <aside class="about" ng-class="{'showAbout': vm.about}">
+        ng-click="vm.altAbout($event)"></a>
+    <aside class="about" ng-class="{'showAbout': vm.about}" ng-click="vm.closeAbout()">
         <div class="about-div">
             <p class="about-header">Welcome to the Mothership</p>
             <p class="about-info">I love you Samantha!!!!!! I want to kiss you so many times when i see your beautiful face!!!</p>
             <p class="about-info">Youre my everything!!!!!!</p>
-            <a class="fa close-caret fa-angle-down fa-2x" ng-style="{'color': vm.color}"
-                ng-click="vm.closeAbout()"></a>
+            <a class="fa close-caret fa-angle-down fa-2x" ng-click="vm.closeAbout()"></a>
         </div>
     </aside>
 </section>
+</main>
