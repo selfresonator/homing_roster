@@ -1,4 +1,4 @@
-<main ng-click="vm.closeAbout()">
+<main>
 <div class="background intro" ng-class="{'hide': vm.bg === false}"></div>
 <div class="background github" ng-class="{'show': vm.github}"></div>
 <div class="background twitter" ng-class="{'show': vm.twitter}"></div>
@@ -7,7 +7,8 @@
 <div class="background email" ng-class="{'show': vm.email}"></div>
 <div class="background car" ng-class="{'show': vm.car}"></div>
 <div class="background instagram" ng-class="{'show': vm.instagram}"></div>
-<div class="background" ng-class="{'show': vm.about, 'fade': vm.about}"></div>
+<div class="background" ng-class="{'show': vm.about, 'fade': vm.about}"
+    ng-click="vm.closeAbout()"></div>
 
 <section class="flexcontainer container">
     <section class="header-main" ng-style="{'color': vm.color}">
