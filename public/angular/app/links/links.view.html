@@ -1,4 +1,3 @@
-<main>
 <div class="background intro" ng-class="{'hide': vm.bg === false}"></div>
 <div class="background github" ng-class="{'show': vm.github}"></div>
 <div class="background twitter" ng-class="{'show': vm.twitter}"></div>
@@ -7,8 +6,7 @@
 <div class="background email" ng-class="{'show': vm.email}"></div>
 <div class="background car" ng-class="{'show': vm.car}"></div>
 <div class="background instagram" ng-class="{'show': vm.instagram}"></div>
-<div class="background" ng-class="{'show': vm.about, 'fade': vm.about}"
-    ng-click="vm.closeAbout()"></div>
+<div class="background" ng-class="{'show': vm.about, 'fade': vm.about}"></div>
 
 <section class="flexcontainer container">
     <section class="header-main" ng-style="{'color': vm.color}">
@@ -26,7 +24,7 @@
         <a href="https://twitter.com/_selfresonator" class="fa tweet fa-twitter fa-3x"
             ng-mouseenter="vm.twitterhv()"
             ng-mouseleave="vm.twitter = false; vm.bg = true; vm.color = 'white'"></a>
-        <a href="https://soundcloud.com/selfresonator" class="fa orange fa-soundcloud fa-3x"
+        <a href="https://soundcloud.com/selfresonator" class="fa sc-color fa-soundcloud fa-3x"
             ng-mouseenter="vm.soundcloudhv()"
             ng-mouseleave="vm.soundcloud = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="#" class="fa insta fa-instagram fa-3x"
@@ -36,7 +34,7 @@
             ng-mouseenter="vm.carhv()"
             ng-mouseleave="vm.car = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="mailto:selfresonator@gmail.com?Subject=Waddup%20G?!"
-            target="_top" class="fa tan fa-envelope fa-3x"
+            target="_top" class="fa fa-envelope fa-3x"
             ng-mouseenter="vm.emailhv()"
             ng-mouseleave="vm.email = false; vm.bg = true; vm.color = 'white'"></a>
     </section>
@@ -46,7 +44,8 @@
     </footer>
     <a class="fa caret fa-caret-up fa-2x" ng-style="{'color': vm.color}"
         ng-click="vm.altAbout($event)"></a>
-    <aside class="about" ng-class="{'showAbout': vm.about}" ng-click="vm.closeAbout()">
+    <div class="focus-main" ng-if="vm.about" ng-click="vm.closeAbout()"></div>
+    <aside class="about" ng-class="{'showAbout': vm.about}">
         <div class="about-div">
             <p class="about-header">Welcome to the Mothership</p>
             <hr>
@@ -54,8 +53,7 @@
             <p class="about-info">I'm AJ, I'm a professional saxophonist and Javascript developer. I'm all about the creative approach to anything, then shedding that down to the most practical solution. And wailing on my horn. And weed.</p>
             <!-- <p class="about-info">I love you Samantha!!!!!! I want to kiss you so many times when i see your beautiful face!!!</p>
             <p class="about-info">Youre my everything!!!!!!</p> -->
-            <a class="fa close-caret fa-angle-down fa-2x"></a>
+            <a class="fa close-caret fa-angle-down fa-2x" ng-click="vm.closeAbout()"></a>
         </div>
     </aside>
 </section>
-</main>

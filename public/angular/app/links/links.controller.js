@@ -43,7 +43,7 @@
       }
       function soundcloudhv() {
           vm.soundcloud = true;
-          vm.color = '#ff3a00';
+          vm.color = 'blanchedalmond';
           vm.bg = false;
       }
       function linkedinhv() {
@@ -72,6 +72,7 @@
       function closeAbout() {
           vm.about = false;
       }
+    //   soundcloudhv();
       $log.info('hello');
     }
 

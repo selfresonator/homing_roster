@@ -187,9 +187,9 @@ body {
                     color: #00aced !important;
                 }
             }
-            .orange {
+            .sc-color {
                 &:hover {
-                    color: #ff3a00 !important;
+                    color: darkgoldenrod !important;
                     text-shadow: 1px 1px 1px white;
                 }
             }
@@ -198,11 +198,6 @@ body {
                     color: gold !important;
                 }
             }
-            // .tan {
-            //     &:hover {
-            //         color: tan !important;
-            //     }
-            // }
             .insta {
                 &:hover {
                     color: cornsilk !important;
@@ -214,6 +209,13 @@ body {
             }
         }
 
+        .focus-main {
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
 
         // ABOUT AND COPYRIGHT
         ////////////////////
