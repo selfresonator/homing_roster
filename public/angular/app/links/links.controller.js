@@ -58,12 +58,11 @@
       }
       function instagramhv() {
           vm.instagram = true;
-          vm.color = 'silver';
+          vm.color = 'cornsilk';
           vm.bg = false;
       }
       function emailhv() {
           vm.email = true;
-        //   vm.color = 'tan';
           vm.bg = false;
       }
       function altAbout($event) {
@@ -73,8 +72,6 @@
       function closeAbout() {
           vm.about = false;
       }
-    //   githubhv();
-    // twitterhv();
       $log.info('hello');
     }
 

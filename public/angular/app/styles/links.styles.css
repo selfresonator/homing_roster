@@ -311,8 +311,8 @@ body .container .links .yellow:hover {
   color: gold !important;
 }
 /* line 207, ../../../scss/links.styles.scss */
-body .container .links .instagram:hover {
-  color: silver !important;
+body .container .links .insta:hover {
+  color: cornsilk !important;
 }
 /* line 212, ../../../scss/links.styles.scss */
 body .container .links a:link {
