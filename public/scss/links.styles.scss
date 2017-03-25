@@ -41,6 +41,11 @@ body {
     .hide {
         opacity: 0 !important;
     }
+    .fade {
+        background-color: ghostwhite;
+        opacity: .5 !important;
+        transition: opacity .7s;
+    }
     .github {
         background-image: url('../../img/code1.png');
     }

@@ -73,7 +73,8 @@
       function closeAbout() {
           vm.about = false;
       }
-
+    //   githubhv();
+    // twitterhv();
       $log.info('hello');
     }
 
