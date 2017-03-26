@@ -20,12 +20,11 @@ module.exports = function(grunt) {
         files: [
           'public/angular/app/*.js',
           'public/angular/app/links/*.js',
-          'public/angular/app/links/links.js',
           'Gruntfile.js',
           '!public/angular/app/dist/all.js',
           '!public/angular/app/dist/all.min.js',
         ],
-        tasks: ['concat:js', 'uglify']
+        // tasks: ['concat:js', 'uglify']
       },
       clienthtml: {
         files: [
@@ -133,7 +132,6 @@ module.exports = function(grunt) {
         src: ['public/angular/app/styles/links.styles.min.css']
       }
     }
-    // , 'public/angular/app/all.min.js']
   });
 
   grunt.registerTask('spy', ['watch']);
