@@ -85,6 +85,10 @@ body .github {
 body .twitter {
   background-image: url("../../img/music1.jpg");
 }
+/* line 58, ../../../scss/links.styles.scss */
+body .linkedin {
+  background-image: url("../../img/clouds.jpg");
+}
 /* line 61, ../../../scss/links.styles.scss */
 body .soundcloud {
   background-image: url("../../img/musicthought1.jpg");
@@ -294,7 +298,7 @@ body .container .links .octocat:hover {
   color: red !important;
 }
 /* line 181, ../../../scss/links.styles.scss */
-body .container .links .green:hover {
+body .container .links .in:hover {
   color: green !important;
 }
 /* line 186, ../../../scss/links.styles.scss */
@@ -477,10 +481,23 @@ body .container .about .about-div .about-info {
   }
 }
 /* line 316, ../../../scss/links.styles.scss */
+body .container .about .about-div .about-footer {
+  bottom: 23%;
+  position: absolute;
+  font-family: Helvetica;
+  font-size: .7em;
+}
+@media only screen and (min-device-width: 1024px) {
+  /* line 316, ../../../scss/links.styles.scss */
+  body .container .about .about-div .about-footer {
+    bottom: 25%;
+  }
+}
+/* line 326, ../../../scss/links.styles.scss */
 body .container .about .about-div hr {
   width: 90%;
 }
-/* line 323, ../../../scss/links.styles.scss */
+/* line 333, ../../../scss/links.styles.scss */
 body .container .showAbout {
   bottom: -20%;
 }

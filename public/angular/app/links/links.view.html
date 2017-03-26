@@ -11,14 +11,14 @@
 <section class="flexcontainer container">
     <section class="header-main" ng-style="{'color': vm.color}">
         <p class="name">A.J. Farley</p>
-        <p class="occupation"><span class="sax">Saxophonist</span> | <span class="pro">Programmer</span></p>
+        <p class="occupation"><span class="sax">Saxophonist</span> | <span class="pro">Developer</span></p>
     </section>
 
     <section class="links">
         <a href="https://github.com/selfresonator" class="fa octocat fa-github fa-3x"
             ng-mouseenter="vm.githubhv()"
             ng-mouseleave="vm.github = false; vm.bg = true; vm.color = 'white'"></a>
-        <a href="https://www.linkedin.com/in/ajfarleyengineer/" class="fa green fa-linkedin fa-3x"
+        <a href="https://www.linkedin.com/in/ajfarleyengineer/" class="fa in fa-linkedin fa-3x"
             ng-mouseenter="vm.linkedinhv()"
             ng-mouseleave="vm.linkedin = false; vm.bg = true; vm.color = 'white'"></a>
         <a href="https://twitter.com/_selfresonator" class="fa tweet fa-twitter fa-3x"
@@ -54,6 +54,7 @@
             <!-- <p class="about-info">I love you Samantha!!!!!! I want to kiss you so many times when i see your beautiful face!!!</p>
             <p class="about-info">Youre my everything!!!!!!</p> -->
             <a class="fa close-caret fa-angle-down fa-2x" ng-click="vm.closeAbout()"></a>
+            <footer class="about-footer"><i>Built with: Angular.js, HTML5, CSS3</i></footer>
         </div>
     </aside>
 </section>

@@ -56,7 +56,7 @@ body {
         background-image: url('../../img/music1.jpg');
     }
     .linkedin {
-        // background-image: url('../../img/work1.jpg');
+        background-image: url('../../img/clouds.jpg');
     }
     .soundcloud {
         background-image: url('../../img/musicthought1.jpg');
@@ -177,7 +177,7 @@ body {
                     color: red !important;
                 }
             }
-            .green {
+            .in {
                 &:hover {
                     color: green !important;
                 }
@@ -310,6 +310,16 @@ body {
                     }
                     @media only screen and (min-device-width : 1024px) {
                         font-size: .95em;
+                    }
+                }
+
+                .about-footer {
+                    bottom: 23%;
+                    position: absolute;
+                    font-family: Helvetica;
+                    font-size: .7em;
+                    @media only screen and (min-device-width : 1024px) {
+                        bottom: 25%;
                     }
                 }
 
