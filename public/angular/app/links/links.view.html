@@ -37,6 +37,7 @@
             target="_top" class="fa fa-envelope fa-3x"
             ng-mouseenter="vm.emailhv()"
             ng-mouseleave="vm.email = false; vm.bg = true; vm.color = 'white'"></a>
+        <p ng-class="{'hide': vm.car === false}" class="soon" style="">Coming Soon...</p>
     </section>
 
     <footer class="footer" ng-style="{'color': vm.color}">
@@ -47,7 +48,7 @@
     <div class="focus-main" ng-if="vm.about" ng-click="vm.closeAbout()"></div>
     <aside class="about" ng-class="{'showAbout': vm.about}">
         <div class="about-div">
-            <p class="about-header">Welcome to the Mothership</p>
+            <header class="about-header">Welcome to the Mothership</header>
             <hr>
             <p class="about-info">Greetings all from Saturn!</p>
             <p class="about-info">I'm AJ, I'm a professional saxophonist and software extraordinaire. I play the alto sax and build with Angular.js and Node.js. Alot. I'm all about the creative approach to anything, then shedding that down to the most practical solution. And wailing on my horn. And weed.</p>

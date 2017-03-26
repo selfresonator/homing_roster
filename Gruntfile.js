@@ -24,7 +24,6 @@ module.exports = function(grunt) {
           '!public/angular/app/dist/all.js',
           '!public/angular/app/dist/all.min.js',
         ],
-        // tasks: ['concat:js', 'uglify']
       },
       clienthtml: {
         files: [

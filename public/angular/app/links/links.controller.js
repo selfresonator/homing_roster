@@ -33,7 +33,7 @@
 
       function githubhv() {
           vm.github = true;
-          vm.color = 'red';
+          vm.color = 'whitesmoke';
           vm.bg = false;
       }
       function twitterhv() {
@@ -72,7 +72,7 @@
       function closeAbout() {
           vm.about = false;
       }
-    //   soundcloudhv();
+    //   carhv();
       $log.info('hello');
     }
 

@@ -174,7 +174,7 @@ body {
 
             .octocat {
                 &:hover {
-                    color: red !important;
+                    color: whitesmoke !important;
                 }
             }
             .in {
@@ -203,7 +203,17 @@ body {
                     color: cornsilk !important;
                 }
             }
-
+            .soon {
+                transition: all .4s linear;
+                text-align: center;
+                color: gold;
+                font-size: .7em;
+                margin-top: -5px;
+                font-family: Yellowtail;
+                @media only screen and (min-device-width : 1024px) {
+                    font-size: 1em;
+                }
+            }
             a:link {
                 text-decoration: none;
             }
