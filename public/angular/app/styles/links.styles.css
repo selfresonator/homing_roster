@@ -146,7 +146,7 @@ body .container .header-main {
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 78, ../../../scss/links.styles.scss */
   body .container .header-main {
     text-align: left;
@@ -192,13 +192,13 @@ body .container .header-main .name {
   font-size: 2.3em;
   text-shadow: 2px 2px black;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 106, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 3.8em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 106, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 2.1em;
@@ -221,7 +221,7 @@ body .container .header-main .occupation .sax {
 body .container .header-main .occupation .pro {
   font-family: Aldrich;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 119, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 1.9em;
@@ -265,7 +265,7 @@ body .container .links {
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 143, ../../../scss/links.styles.scss */
   body .container .links {
     height: 155px;
@@ -287,7 +287,7 @@ body .container .links .fa:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 159, ../../../scss/links.styles.scss */
   body .container .links .fa {
     font-size: 2.6em;
@@ -346,7 +346,7 @@ body .container .footer .copyright {
   font-family: Michroma;
   font-size: .75em;
 }
-@media (max-device-width: 767px) {
+@media (max-width: 767px) {
   /* line 230, ../../../scss/links.styles.scss */
   body .container .footer .copyright {
     display: none;
@@ -396,7 +396,7 @@ body .container .about {
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 256, ../../../scss/links.styles.scss */
   body .container .about {
     right: 0%;
@@ -433,7 +433,7 @@ body .container .about .close-caret {
     opacity: 0;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 274, ../../../scss/links.styles.scss */
   body .container .about .close-caret {
     right: 9%;
@@ -451,13 +451,13 @@ body .container .about .about-div .about-header {
   font-family: Rationale;
   font-variant: small-caps;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 292, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 2.7em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 292, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 1.9em;
@@ -468,13 +468,13 @@ body .container .about .about-div .about-info {
   font-family: Metrophobic;
   font-size: 1em;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 305, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: 1.55em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 305, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: .95em;
@@ -487,7 +487,7 @@ body .container .about .about-div .about-footer {
   font-family: Helvetica;
   font-size: .7em;
 }
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 316, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-footer {
     bottom: 25%;
