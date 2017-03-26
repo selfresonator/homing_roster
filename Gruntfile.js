@@ -7,6 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -20,8 +21,11 @@ module.exports = function(grunt) {
           'public/angular/app/*.js',
           'public/angular/app/links/*.js',
           'public/angular/app/links/links.js',
-          'Gruntfile.js'
+          'Gruntfile.js',
+          '!public/angular/app/dist/all.js',
+          '!public/angular/app/dist/all.min.js',
         ],
+        tasks: ['concat:js', 'uglify']
       },
       clienthtml: {
         files: [
@@ -33,10 +37,12 @@ module.exports = function(grunt) {
         files: [
           'public/scss/*.scss',
         ],
-        tasks: ['clean','compass:dev','postcss:dist', 'cssmin:links']
+        tasks: ['clean:css','compass:dev','postcss:dist', 'cssmin:links']
       }
     },
 
+    // CSS
+    ////////////////////
     compass: {
       dev: {
         options: {
@@ -86,6 +92,32 @@ module.exports = function(grunt) {
       }
     },
 
+    // JS
+    ////////////////////
+    concat: {
+      js: {
+        src: [
+          'public/angular/app/app.js',
+          'public/angular/app/app.routes.js',
+          'public/angular/app/app.config.js',
+          'public/angular/app/app.constants.js',
+          'public/angular/app/links/links.controller.js',
+        ],
+        dest: 'public/angular/app/dist/all.js'
+      },
+    },
+
+    uglify: {
+      options: {
+        mangle: false
+      },
+      js: {
+        files: {
+          'public/angular/app/dist/all.min.js': ['public/angular/app/dist/all.js']
+        }
+      }
+    },
+
     nodemon: {
       dev: {
         script: 'app.js',
@@ -96,7 +128,12 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['public/angular/app/styles/links.styles.min.css']
+    clean: {
+      css: {
+        src: ['public/angular/app/styles/links.styles.min.css']
+      }
+    }
+    // , 'public/angular/app/all.min.js']
   });
 
   grunt.registerTask('spy', ['watch']);
