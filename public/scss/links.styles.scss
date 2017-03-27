@@ -4,10 +4,10 @@ $bg-width: 98%;
 
 .flexcontainer {
    display: flex;
-   margin-left: auto;
-   flex-direction: row;
+   // margin-left: auto;
+   flex-direction: column;
    align-items: center;
-   justify-content: center;
+   // justify-content: center;
    align-content: center;
 }
 
