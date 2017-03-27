@@ -48,7 +48,7 @@
       }
       function linkedinhv() {
           vm.linkedin = true;
-          vm.color = 'green';
+          vm.color = 'palegreen';
           vm.bg = false;
       }
       function carhv() {
@@ -72,7 +72,7 @@
       function closeAbout() {
           vm.about = false;
       }
-    //   carhv();
+    //   linkedinhv();
       $log.info('hello');
     }
 

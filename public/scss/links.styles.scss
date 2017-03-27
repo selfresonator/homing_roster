@@ -29,13 +29,16 @@ body {
         background-position: center center;
     }
     .intro {
-        background-image: url('../../img/saturn.jpg');
+        background-image: url('../../img/lights.jpg');
         opacity: 1 !important;
         z-index: -1000;
         animation: bg 2s linear;
         @keyframes bg {
             0% {opacity: 0}
             100% {opacity: 1}
+        }
+        @media (min-width: 1024px) {
+            background-image: url('../../img/saturn.jpg');
         }
     }
     .show {
@@ -56,7 +59,7 @@ body {
         background-image: url('../../img/music1.jpg');
     }
     .linkedin {
-        background-image: url('../../img/clouds.jpg');
+        background-image: url('../../img/seattle.jpg');
     }
     .soundcloud {
         background-image: url('../../img/musicthought1.jpg');
@@ -90,7 +93,7 @@ body {
                 100% {top: 5%; opacity: 1}
             }
 
-            @media only screen and (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 text-align: left;
                 margin-top: 0px;
                 left: 2%;
@@ -108,10 +111,10 @@ body {
                 font-family: Allerta Stencil;
                 font-size: 2.3em;
                 text-shadow: 2px 2px black;
-                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                @media  (min-width : 768px) and (max-width : 1024px) {
                     font-size: 3.8em;
                 }
-                @media only screen and (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 2.1em;
                 }
             }
@@ -130,12 +133,9 @@ body {
                     font-family: Aldrich;
                 }
 
-                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                @media  (min-width : 768px) and (max-width : 1024px) {
                     font-size: 1.9em;
                 }
-                // @media only screen and (min-device-width : 1024px) {
-                //     font-size: 2em;
-                // }
             }
 
         }
@@ -152,7 +152,7 @@ body {
                 70% {bottom: -3.5%; opacity: 0}
                 100% {bottom: -0%; opacity: 1}
             }
-            @media only screen and (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 height: 155px;
             }
 
@@ -167,7 +167,7 @@ body {
                 &:hover {
                     transform: scale(1.2);
                 }
-                @media only screen and (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 2.6em;
                 }
             }
@@ -179,7 +179,7 @@ body {
             }
             .in {
                 &:hover {
-                    color: green !important;
+                    color: palegreen !important;
                 }
             }
             .tweet {
@@ -189,7 +189,7 @@ body {
             }
             .sc-color {
                 &:hover {
-                    color: darkgoldenrod !important;
+                    color: darkorange !important;
                     text-shadow: 1px 1px 1px white;
                 }
             }
@@ -210,7 +210,7 @@ body {
                 font-size: .7em;
                 margin-top: -5px;
                 font-family: Yellowtail;
-                @media only screen and (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 1em;
                 }
             }
@@ -242,7 +242,7 @@ body {
                 width: 80px;
                 font-family: Michroma;
                 font-size: .75em;
-                @media (max-device-width : 767px) {
+                @media (max-width : 767px) {
                     display: none;
                 }
             }
@@ -264,7 +264,7 @@ body {
         }
 
         .about {
-            background-color: whitesmoke;
+            background-color: snow;
             bottom: -96%;
             position: fixed;
             width: 100%;
@@ -274,11 +274,12 @@ body {
             overflow-y: scroll;
             z-index: 300;
             transition: all .35s ease-in-out;
-            @media only screen and (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 right: 0%;
                 width: 33%;
                 height: 87%;
                 border-top-left-radius: 5px;
+                background-color: whitesmoke;
             }
 
             .close-caret {
@@ -290,7 +291,7 @@ body {
                     0% {top: 70%; opacity: 1}
                     100% {top: 72%; opacity: 0}
                 }
-                @media only screen and (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     right: 9%;
                 }
             }
@@ -304,10 +305,10 @@ body {
                     font-size: 1.85em;
                     font-family: Rationale;
                     font-variant: small-caps;
-                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media  (min-width : 768px) and (max-width : 1024px) {
                         font-size: 2.7em ;
                     }
-                    @media only screen and (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         font-size: 1.9em;
                     }
                 }
@@ -315,10 +316,10 @@ body {
                 .about-info {
                     font-family: Metrophobic;
                     font-size: 1em;
-                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media  (min-width : 768px) and (max-width : 1024px) {
                         font-size: 1.55em ;
                     }
-                    @media only screen and (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         font-size: .95em;
                     }
                 }
@@ -328,7 +329,7 @@ body {
                     position: absolute;
                     font-family: Helvetica;
                     font-size: .7em;
-                    @media only screen and (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         bottom: 25%;
                     }
                 }

@@ -40,7 +40,7 @@ body .background {
 }
 /* line 31, ../../../scss/links.styles.scss */
 body .intro {
-  background-image: url("../../img/saturn.jpg");
+  background-image: url("../../img/lights.jpg");
   opacity: 1 !important;
   z-index: -1000;
   -webkit-animation: bg 2s linear;
@@ -62,50 +62,56 @@ body .intro {
     opacity: 1;
   }
 }
-/* line 41, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 31, ../../../scss/links.styles.scss */
+  body .intro {
+    background-image: url("../../img/saturn.jpg");
+  }
+}
+/* line 44, ../../../scss/links.styles.scss */
 body .show {
   opacity: 1;
 }
-/* line 44, ../../../scss/links.styles.scss */
+/* line 47, ../../../scss/links.styles.scss */
 body .hide {
   opacity: 0 !important;
 }
-/* line 47, ../../../scss/links.styles.scss */
+/* line 50, ../../../scss/links.styles.scss */
 body .fade {
   background-color: ghostwhite;
   opacity: .5 !important;
   -webkit-transition: opacity .7s;
   transition: opacity .7s;
 }
-/* line 52, ../../../scss/links.styles.scss */
+/* line 55, ../../../scss/links.styles.scss */
 body .github {
   background-image: url("../../img/code1.png");
 }
-/* line 55, ../../../scss/links.styles.scss */
+/* line 58, ../../../scss/links.styles.scss */
 body .twitter {
   background-image: url("../../img/music1.jpg");
 }
-/* line 58, ../../../scss/links.styles.scss */
-body .linkedin {
-  background-image: url("../../img/clouds.jpg");
-}
 /* line 61, ../../../scss/links.styles.scss */
+body .linkedin {
+  background-image: url("../../img/seattle.jpg");
+}
+/* line 64, ../../../scss/links.styles.scss */
 body .soundcloud {
   background-image: url("../../img/musicthought1.jpg");
 }
-/* line 64, ../../../scss/links.styles.scss */
+/* line 67, ../../../scss/links.styles.scss */
 body .email {
   background-image: url("../../img/baphomet.png");
 }
-/* line 67, ../../../scss/links.styles.scss */
+/* line 70, ../../../scss/links.styles.scss */
 body .car {
   background-image: url("../../img/lam.jpg");
 }
-/* line 70, ../../../scss/links.styles.scss */
+/* line 73, ../../../scss/links.styles.scss */
 body .instagram {
   background-image: url("../../img/insta.jpg");
 }
-/* line 78, ../../../scss/links.styles.scss */
+/* line 81, ../../../scss/links.styles.scss */
 body .container .header-main {
   width: 98%;
   top: 5%;
@@ -146,8 +152,8 @@ body .container .header-main {
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 78, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 81, ../../../scss/links.styles.scss */
   body .container .header-main {
     text-align: left;
     margin-top: 0px;
@@ -185,44 +191,44 @@ body .container .header-main {
     }
   }
 }
-/* line 106, ../../../scss/links.styles.scss */
+/* line 109, ../../../scss/links.styles.scss */
 body .container .header-main .name {
   margin-bottom: -10px;
   font-family: Allerta Stencil;
   font-size: 2.3em;
   text-shadow: 2px 2px black;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 106, ../../../scss/links.styles.scss */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 109, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 3.8em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 106, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 109, ../../../scss/links.styles.scss */
   body .container .header-main .name {
     font-size: 2.1em;
   }
 }
-/* line 119, ../../../scss/links.styles.scss */
+/* line 122, ../../../scss/links.styles.scss */
 body .container .header-main .occupation {
   margin-right: 1%;
   margin-top: 10px;
   font-size: 1.3em;
   text-shadow: 2px 2px black;
 }
-/* line 124, ../../../scss/links.styles.scss */
+/* line 127, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .sax {
   font-family: Limelight;
   font-variant: small-caps;
   font-size: 1.3em !important;
 }
-/* line 129, ../../../scss/links.styles.scss */
+/* line 132, ../../../scss/links.styles.scss */
 body .container .header-main .occupation .pro {
   font-family: Aldrich;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 119, ../../../scss/links.styles.scss */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 122, ../../../scss/links.styles.scss */
   body .container .header-main .occupation {
     font-size: 1.9em;
   }
@@ -265,7 +271,7 @@ body .container .links {
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   /* line 143, ../../../scss/links.styles.scss */
   body .container .links {
     height: 155px;
@@ -287,7 +293,7 @@ body .container .links .fa:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   /* line 159, ../../../scss/links.styles.scss */
   body .container .links .fa {
     font-size: 2.6em;
@@ -299,7 +305,7 @@ body .container .links .octocat:hover {
 }
 /* line 181, ../../../scss/links.styles.scss */
 body .container .links .in:hover {
-  color: green !important;
+  color: palegreen !important;
 }
 /* line 186, ../../../scss/links.styles.scss */
 body .container .links .tweet:hover {
@@ -307,7 +313,7 @@ body .container .links .tweet:hover {
 }
 /* line 191, ../../../scss/links.styles.scss */
 body .container .links .sc-color:hover {
-  color: darkgoldenrod !important;
+  color: darkorange !important;
   text-shadow: 1px 1px 1px white;
 }
 /* line 197, ../../../scss/links.styles.scss */
@@ -328,7 +334,7 @@ body .container .links .soon {
   margin-top: -5px;
   font-family: Yellowtail;
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   /* line 206, ../../../scss/links.styles.scss */
   body .container .links .soon {
     font-size: 1em;
@@ -362,7 +368,7 @@ body .container .footer .copyright {
   font-family: Michroma;
   font-size: .75em;
 }
-@media (max-device-width: 767px) {
+@media (max-width: 767px) {
   /* line 240, ../../../scss/links.styles.scss */
   body .container .footer .copyright {
     display: none;
@@ -400,7 +406,7 @@ body .container .caret {
 }
 /* line 266, ../../../scss/links.styles.scss */
 body .container .about {
-  background-color: whitesmoke;
+  background-color: snow;
   bottom: -96%;
   position: fixed;
   width: 100%;
@@ -412,16 +418,17 @@ body .container .about {
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   /* line 266, ../../../scss/links.styles.scss */
   body .container .about {
     right: 0%;
     width: 33%;
     height: 87%;
     border-top-left-radius: 5px;
+    background-color: whitesmoke;
   }
 }
-/* line 284, ../../../scss/links.styles.scss */
+/* line 285, ../../../scss/links.styles.scss */
 body .container .about .close-caret {
   top: 72%;
   position: absolute;
@@ -449,71 +456,71 @@ body .container .about .close-caret {
     opacity: 0;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 284, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 285, ../../../scss/links.styles.scss */
   body .container .about .close-caret {
     right: 9%;
   }
 }
-/* line 298, ../../../scss/links.styles.scss */
+/* line 299, ../../../scss/links.styles.scss */
 body .container .about .about-div {
   margin: 4.5%;
   text-align: center;
 }
-/* line 302, ../../../scss/links.styles.scss */
+/* line 303, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-header {
   margin-bottom: 5%;
   font-size: 1.85em;
   font-family: Rationale;
   font-variant: small-caps;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 302, ../../../scss/links.styles.scss */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 303, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 2.7em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 302, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 303, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 1.9em;
   }
 }
-/* line 315, ../../../scss/links.styles.scss */
+/* line 316, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-info {
   font-family: Metrophobic;
   font-size: 1em;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 315, ../../../scss/links.styles.scss */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 316, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: 1.55em;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 315, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 316, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: .95em;
   }
 }
-/* line 326, ../../../scss/links.styles.scss */
+/* line 327, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-footer {
   bottom: 23%;
   position: absolute;
   font-family: Helvetica;
   font-size: .7em;
 }
-@media only screen and (min-device-width: 1024px) {
-  /* line 326, ../../../scss/links.styles.scss */
+@media (min-width: 1024px) {
+  /* line 327, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-footer {
     bottom: 25%;
   }
 }
-/* line 336, ../../../scss/links.styles.scss */
+/* line 337, ../../../scss/links.styles.scss */
 body .container .about .about-div hr {
   width: 90%;
 }
-/* line 343, ../../../scss/links.styles.scss */
+/* line 344, ../../../scss/links.styles.scss */
 body .container .showAbout {
   bottom: -20%;
 }
