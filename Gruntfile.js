@@ -24,6 +24,7 @@ module.exports = function(grunt) {
           '!public/angular/app/dist/all.js',
           '!public/angular/app/dist/all.min.js',
         ],
+        tasks: ['concat:js','uglify:js']
       },
       clienthtml: {
         files: [
@@ -107,7 +108,7 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-        mangle: false
+        mangle: true
       },
       js: {
         files: {

@@ -48,7 +48,7 @@
   config.$inject = ['$locationProvider'];
 
   function config($locationProvider) {
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
     //$locationProvider.hashPrefix( '!' );
   }
 
@@ -102,7 +102,7 @@
 
       function githubhv() {
           vm.github = true;
-          vm.color = 'red';
+          vm.color = 'whitesmoke';
           vm.bg = false;
       }
       function twitterhv() {
@@ -117,7 +117,7 @@
       }
       function linkedinhv() {
           vm.linkedin = true;
-          vm.color = 'green';
+          vm.color = 'palegreen';
           vm.bg = false;
       }
       function carhv() {
@@ -141,7 +141,7 @@
       function closeAbout() {
           vm.about = false;
       }
-    //   soundcloudhv();
+    //   linkedinhv();
       $log.info('hello');
     }
 
