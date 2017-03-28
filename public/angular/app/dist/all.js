@@ -74,10 +74,12 @@
     .module('links.controller')
     .controller('LinksController', LinksController)
 
-    LinksController.$inject = ['$log'];
+    LinksController.$inject = ['$log', '$window'];
 
-    function LinksController($log, $event) {
+    function LinksController($log, $window, $event, $timeout) {
+        console.log($window);
       var vm = this;
+      vm.sm = true;
       vm.hovered = '';
       vm.color = '';
       vm.bg = true;
@@ -89,6 +91,7 @@
       vm.instagram = false;
       vm.car = false;
       vm.about = false;
+      vm.windowWidth = $window.innerWidth;
 
       vm.githubhv = githubhv;
       vm.twitterhv = twitterhv;
@@ -99,6 +102,8 @@
       vm.instagramhv = instagramhv;
       vm.altAbout = altAbout;
       vm.closeAbout = closeAbout;
+
+      if ($window.innerWidth > 768) vm.sm = false;
 
       function githubhv() {
           vm.github = true;
@@ -141,7 +146,7 @@
       function closeAbout() {
           vm.about = false;
       }
-    //   linkedinhv();
+
       $log.info('hello');
     }
 

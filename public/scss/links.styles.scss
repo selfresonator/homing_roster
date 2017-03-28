@@ -2,15 +2,6 @@ $break-med: 768px;
 $break-large: 1200px;
 $bg-width: 98%;
 
-.flexcontainer {
-   display: flex;
-   margin-left: auto;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   align-content: center;
-}
-
 body {
     // BACKGROUND IMAGES
     ////////////////////
@@ -80,30 +71,33 @@ body {
     .container {
         .header-main {
             width: $bg-width;
-            top: 5%;
-            margin-top: -30px;
             position: absolute;
+            color: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-top: -30px;
             text-align: center;
             color: ghostwhite;
             transition: color .5s;
-            animation: appear 2.7s ease-out;
-            @keyframes appear {
-                0% {top: 0%; opacity: 0}
-                70% {top: 0%; opacity: 0}
-                100% {top: 5%; opacity: 1}
-            }
+            // animation: appear 2.7s ease-out;
+            // @keyframes appear {
+            //     0% {top: 0%; opacity: 0}
+            //     70% {top: 0%; opacity: 0}
+            //     100% {top: 5%; opacity: 1}
+            // }
 
             @media  (min-device-width : 1024px) {
                 text-align: left;
                 margin-top: 0px;
                 left: 2%;
                 top: -2%;
-                animation: appear1 2.7s ease-out;
-                @keyframes appear1 {
-                    0% {top: -5%; opacity: 0}
-                    70% {top: -5%; opacity: 0}
-                    100% {top: -2%; opacity: 1}
-                }
+                // animation: appear1 2.7s ease-out;
+                // @keyframes appear1 {
+                //     0% {top: -5%; opacity: 0}
+                //     70% {top: -5%; opacity: 0}
+                //     100% {top: -2%; opacity: 1}
+                // }
             }
 
             .name {
@@ -143,17 +137,27 @@ body {
         .links {
             height: 125px;
             width: 320px;
-            bottom: 0%;
             position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
             text-align: center;
-            animation: links 2.5s ease-out;
-            @keyframes links {
-                0% {bottom: -3.5%; opacity: 0}
-                70% {bottom: -3.5%; opacity: 0}
-                100% {bottom: -0%; opacity: 1}
-            }
+            display: flex;
+            margin: 0 auto;
+            flex-flow: row wrap;
+            width: 18em;
+            justify-content: center;
+            align-items: center;
+
+            // animation: links 2.5s ease-out;
+            // @keyframes links {
+            //     0% {bottom: -3.5%; opacity: 0}
+            //     70% {bottom: -3.5%; opacity: 0}
+            //     100% {bottom: -0%; opacity: 1}
+            // }
             @media  (min-device-width : 1024px) {
                 height: 155px;
+                // width: 18em;
             }
 
             .fa {
@@ -204,6 +208,9 @@ body {
                 }
             }
             .soon {
+                bottom: 0;
+                right: 0;
+                left: 0;
                 transition: all .4s linear;
                 text-align: center;
                 color: gold;
@@ -213,6 +220,9 @@ body {
                 @media  (min-device-width : 1024px) {
                     font-size: 1em;
                 }
+            }
+            .none {
+                display: none;
             }
             a:link {
                 text-decoration: none;
