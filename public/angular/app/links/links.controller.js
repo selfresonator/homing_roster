@@ -8,7 +8,6 @@
     LinksController.$inject = ['$log', '$window'];
 
     function LinksController($log, $window, $event, $timeout) {
-        console.log($window);
       var vm = this;
       vm.sm = true;
       vm.hovered = '';
