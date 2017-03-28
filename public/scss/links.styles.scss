@@ -70,34 +70,34 @@ body {
     ////////////////////
     .container {
         .header-main {
-            width: $bg-width;
+            width: 100%;
             position: absolute;
             color: white;
-            top: 0;
+            top: 5%;
             left: 0;
             right: 0;
             margin-top: -30px;
             text-align: center;
             color: ghostwhite;
             transition: color .5s;
-            // animation: appear 2.7s ease-out;
-            // @keyframes appear {
-            //     0% {top: 0%; opacity: 0}
-            //     70% {top: 0%; opacity: 0}
-            //     100% {top: 5%; opacity: 1}
-            // }
+            animation: appear 2.7s ease-out;
+            @keyframes appear {
+                0% {top: 0%; opacity: 0}
+                70% {top: 0%; opacity: 0}
+                100% {top: 5%; opacity: 1}
+            }
 
             @media  (min-device-width : 1024px) {
                 text-align: left;
                 margin-top: 0px;
                 left: 2%;
                 top: -2%;
-                // animation: appear1 2.7s ease-out;
-                // @keyframes appear1 {
-                //     0% {top: -5%; opacity: 0}
-                //     70% {top: -5%; opacity: 0}
-                //     100% {top: -2%; opacity: 1}
-                // }
+                animation: appear1 2.7s ease-out;
+                @keyframes appear1 {
+                    0% {top: -5%; opacity: 0}
+                    70% {top: -5%; opacity: 0}
+                    100% {top: -2%; opacity: 1}
+                }
             }
 
             .name {
@@ -149,12 +149,12 @@ body {
             justify-content: center;
             align-items: center;
 
-            // animation: links 2.5s ease-out;
-            // @keyframes links {
-            //     0% {bottom: -3.5%; opacity: 0}
-            //     70% {bottom: -3.5%; opacity: 0}
-            //     100% {bottom: -0%; opacity: 1}
-            // }
+            animation: links 2.5s ease-out;
+            @keyframes links {
+                0% {bottom: -3.5%; opacity: 0}
+                70% {bottom: -3.5%; opacity: 0}
+                100% {bottom: -0%; opacity: 1}
+            }
             @media  (min-device-width : 1024px) {
                 height: 155px;
                 // width: 18em;
@@ -284,8 +284,12 @@ body {
             overflow-y: scroll;
             z-index: 300;
             transition: all .35s ease-in-out;
+            @media  (max-device-width : 768px) {
+                left: 0;
+            }
+
             @media  (min-device-width : 1024px) {
-                right: 0%;
+                right: 0% !important;
                 width: 33%;
                 height: 87%;
                 border-top-left-radius: 5px;
@@ -353,6 +357,10 @@ body {
 
         .showAbout {
             bottom: -20%;
+            @media (max-width: 768px) {
+                left: 0;
+                right: 0;
+            }
         }
     }
 
