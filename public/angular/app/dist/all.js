@@ -78,8 +78,6 @@
 
     function LinksController($log, $window, $event, $timeout) {
       var vm = this;
-      vm.sm = true;
-      vm.hovered = '';
       vm.color = '';
       vm.bg = true;
       vm.email = false;
@@ -101,8 +99,6 @@
       vm.instagramhv = instagramhv;
       vm.altAbout = altAbout;
       vm.closeAbout = closeAbout;
-
-      if ($window.innerWidth > 768) vm.sm = false;
 
       function githubhv() {
           vm.github = true;

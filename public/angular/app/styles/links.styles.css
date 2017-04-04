@@ -344,14 +344,10 @@ body .container .links .soon {
   }
 }
 /* line 224, ../../../scss/links.styles.scss */
-body .container .links .none {
-  display: none;
-}
-/* line 227, ../../../scss/links.styles.scss */
 body .container .links a:link {
   text-decoration: none;
 }
-/* line 232, ../../../scss/links.styles.scss */
+/* line 229, ../../../scss/links.styles.scss */
 body .container .focus-main {
   top: 0;
   bottom: 0;
@@ -359,7 +355,7 @@ body .container .focus-main {
   left: 0;
   right: 0;
 }
-/* line 242, ../../../scss/links.styles.scss */
+/* line 239, ../../../scss/links.styles.scss */
 body .container .footer {
   color: ghostwhite;
   z-index: 100;
@@ -368,7 +364,7 @@ body .container .footer {
   left: 2%;
   position: fixed;
 }
-/* line 250, ../../../scss/links.styles.scss */
+/* line 247, ../../../scss/links.styles.scss */
 body .container .footer .copyright {
   height: 50px;
   width: 80px;
@@ -376,12 +372,12 @@ body .container .footer .copyright {
   font-size: .75em;
 }
 @media (max-device-width: 767px) {
-  /* line 250, ../../../scss/links.styles.scss */
+  /* line 247, ../../../scss/links.styles.scss */
   body .container .footer .copyright {
     display: none;
   }
 }
-/* line 262, ../../../scss/links.styles.scss */
+/* line 259, ../../../scss/links.styles.scss */
 body .container .caret {
   color: ghostwhite;
   position: absolute;
@@ -411,7 +407,7 @@ body .container .caret {
     opacity: 0;
   }
 }
-/* line 276, ../../../scss/links.styles.scss */
+/* line 273, ../../../scss/links.styles.scss */
 body .container .about {
   background-color: snow;
   bottom: -96%;
@@ -426,13 +422,13 @@ body .container .about {
   transition: all .35s ease-in-out;
 }
 @media (max-device-width: 768px) {
-  /* line 276, ../../../scss/links.styles.scss */
+  /* line 273, ../../../scss/links.styles.scss */
   body .container .about {
     left: 0;
   }
 }
 @media (min-device-width: 1024px) {
-  /* line 276, ../../../scss/links.styles.scss */
+  /* line 273, ../../../scss/links.styles.scss */
   body .container .about {
     right: 0% !important;
     width: 33%;
@@ -441,7 +437,7 @@ body .container .about {
     background-color: whitesmoke;
   }
 }
-/* line 299, ../../../scss/links.styles.scss */
+/* line 296, ../../../scss/links.styles.scss */
 body .container .about .close-caret {
   top: 72%;
   position: absolute;
@@ -470,17 +466,17 @@ body .container .about .close-caret {
   }
 }
 @media (min-device-width: 1024px) {
-  /* line 299, ../../../scss/links.styles.scss */
+  /* line 296, ../../../scss/links.styles.scss */
   body .container .about .close-caret {
     right: 9%;
   }
 }
-/* line 313, ../../../scss/links.styles.scss */
+/* line 310, ../../../scss/links.styles.scss */
 body .container .about .about-div {
   margin: 4.5%;
   text-align: center;
 }
-/* line 317, ../../../scss/links.styles.scss */
+/* line 314, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-header {
   margin-bottom: 0%;
   font-size: 1.85em;
@@ -488,35 +484,35 @@ body .container .about .about-div .about-header {
   font-variant: small-caps;
 }
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 317, ../../../scss/links.styles.scss */
+  /* line 314, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 2.7em;
   }
 }
 @media (min-device-width: 1024px) {
-  /* line 317, ../../../scss/links.styles.scss */
+  /* line 314, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-header {
     font-size: 1.9em;
   }
 }
-/* line 330, ../../../scss/links.styles.scss */
+/* line 327, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-info {
   font-family: Metrophobic;
   font-size: 1em;
 }
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 330, ../../../scss/links.styles.scss */
+  /* line 327, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: 1.55em;
   }
 }
 @media (min-device-width: 1024px) {
-  /* line 330, ../../../scss/links.styles.scss */
+  /* line 327, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-info {
     font-size: .95em;
   }
 }
-/* line 341, ../../../scss/links.styles.scss */
+/* line 338, ../../../scss/links.styles.scss */
 body .container .about .about-div .about-footer {
   bottom: 23%;
   position: absolute;
@@ -524,21 +520,21 @@ body .container .about .about-div .about-footer {
   font-size: .7em;
 }
 @media (min-device-width: 1024px) {
-  /* line 341, ../../../scss/links.styles.scss */
+  /* line 338, ../../../scss/links.styles.scss */
   body .container .about .about-div .about-footer {
     bottom: 25%;
   }
 }
-/* line 351, ../../../scss/links.styles.scss */
+/* line 348, ../../../scss/links.styles.scss */
 body .container .about .about-div hr {
   width: 90%;
 }
-/* line 358, ../../../scss/links.styles.scss */
+/* line 355, ../../../scss/links.styles.scss */
 body .container .showAbout {
   bottom: -20%;
 }
 @media (max-width: 768px) {
-  /* line 358, ../../../scss/links.styles.scss */
+  /* line 355, ../../../scss/links.styles.scss */
   body .container .showAbout {
     left: 0;
     right: 0;
