@@ -12,6 +12,7 @@ const app = express();
 //serving our index.html
 app.use(express.static(publicPath));
 app.use(helmet());
+app.use(require('prerender-node'));
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(bodyParser.urlencoded({
   extended: true
