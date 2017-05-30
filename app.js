@@ -17,6 +17,10 @@ const forceSsl = (req, res, next) => {
   return next();
 };
 
+if (env === 'production') {
+  app.use(forceSsl);
+}
+
 //serving our index.html
 app.use(express.static(publicPath));
 app.use(helmet());
