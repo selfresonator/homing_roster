@@ -17,7 +17,7 @@ const forceSsl = (req, res, next) => {
   return next();
 };
 
-if (env === 'production') {
+if (ENV === 'production') {
   app.use(forceSsl);
 }
 
