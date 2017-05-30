@@ -5,9 +5,17 @@ const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const publicPath = path.resolve(__dirname, 'public/angular/app');
+const ENV = process.env.NODE_ENV;
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+
+const forceSsl = (req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(['https://', req.get('Host'), req.url].join(''));
+  }
+  return next();
+};
 
 //serving our index.html
 app.use(express.static(publicPath));
