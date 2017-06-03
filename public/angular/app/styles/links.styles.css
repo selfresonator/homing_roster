@@ -417,7 +417,6 @@ body .container .about {
   height: 96%;
   z-index: 200;
   display: block;
-  overflow-y: scroll;
   z-index: 300;
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
