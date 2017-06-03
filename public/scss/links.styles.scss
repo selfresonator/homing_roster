@@ -18,9 +18,10 @@ body {
         backface-visibility: hidden;
         background-size: cover;
         background-position: center center;
+        overflow: hidden;
     }
     .intro {
-        background-image: url('../../img/lights.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/lights.jpg');
         opacity: 1 !important;
         z-index: -1000;
         animation: bg 2s linear;
@@ -28,8 +29,8 @@ body {
             0% {opacity: 0}
             100% {opacity: 1}
         }
-        @media (min-device-width: 1024px) {
-            background-image: url('../../img/saturn.jpg');
+        @media (min-width: 1024px) {
+            background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/saturn.jpg');
         }
     }
     .show {
@@ -44,25 +45,25 @@ body {
         transition: opacity .7s;
     }
     .github {
-        background-image: url('../../img/code1.png');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/code1.png');
     }
     .twitter {
-        background-image: url('../../img/music1.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/music1.jpg');
     }
     .linkedin {
-        background-image: url('../../img/seattle.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/seattle.jpg');
     }
     .soundcloud {
-        background-image: url('../../img/musicthought1.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/musicthought1.jpg');
     }
     .email {
-        background-image: url('../../img/baphomet.png');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/baphomet.png');
     }
     .car {
-        background-image: url('../../img/lam.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/lam.jpg');
     }
     .instagram {
-        background-image: url('../../img/insta.jpg');
+        background-image: url('https://s3-us-west-1.amazonaws.com/ajfarley/insta.jpg');
     }
 
 
@@ -87,7 +88,7 @@ body {
                 100% {top: 5%; opacity: 1}
             }
 
-            @media  (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 text-align: left;
                 margin-top: 0px;
                 left: 2%;
@@ -105,10 +106,10 @@ body {
                 font-family: Allerta Stencil;
                 font-size: 2.3em;
                 text-shadow: 2px 2px black;
-                @media  (min-device-width : 768px) and (max-device-width : 1024px) {
+                @media  (min-width : 768px) and (max-width : 1024px) {
                     font-size: 3.8em;
                 }
-                @media  (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 2.1em;
                 }
             }
@@ -127,7 +128,7 @@ body {
                     font-family: Aldrich;
                 }
 
-                @media  (min-device-width : 768px) and (max-device-width : 1024px) {
+                @media  (min-width : 768px) and (max-width : 1024px) {
                     font-size: 1.9em;
                 }
             }
@@ -155,7 +156,7 @@ body {
                 70% {bottom: -3.5%; opacity: 0}
                 100% {bottom: -0%; opacity: 1}
             }
-            @media  (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 height: 155px;
                 // width: 18em;
             }
@@ -171,7 +172,7 @@ body {
                 &:hover {
                     transform: scale(1.2);
                 }
-                @media  (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 2.6em;
                 }
             }
@@ -217,7 +218,7 @@ body {
                 font-size: .7em;
                 margin-top: -5px;
                 font-family: Yellowtail;
-                @media  (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     font-size: 1em;
                 }
             }
@@ -249,7 +250,7 @@ body {
                 width: 80px;
                 font-family: Michroma;
                 font-size: .75em;
-                @media (max-device-width : 767px) {
+                @media (max-width : 767px) {
                     display: none;
                 }
             }
@@ -281,13 +282,17 @@ body {
             overflow-y: scroll;
             z-index: 300;
             transition: all .35s ease-in-out;
-            @media  (max-device-width : 768px) {
+            overflow: hidden;
+            @media  (max-width : 767px) {
                 left: 0;
             }
+            @media  (min-width : 768px) {
+                //width: 100%;
+            }
 
-            @media  (min-device-width : 1024px) {
+            @media  (min-width : 1024px) {
                 right: 0% !important;
-                width: 33%;
+                width: 700px;
                 height: 87%;
                 border-top-left-radius: 5px;
                 background-color: whitesmoke;
@@ -302,7 +307,7 @@ body {
                     0% {top: 70%; opacity: 1}
                     100% {top: 72%; opacity: 0}
                 }
-                @media  (min-device-width : 1024px) {
+                @media  (min-width : 1024px) {
                     right: 9%;
                 }
             }
@@ -316,10 +321,10 @@ body {
                     font-size: 1.85em;
                     font-family: Rationale;
                     font-variant: small-caps;
-                    @media  (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media  (min-width : 768px) and (max-width : 1024px) {
                         font-size: 2.7em ;
                     }
-                    @media  (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         font-size: 1.9em;
                     }
                 }
@@ -327,10 +332,10 @@ body {
                 .about-info {
                     font-family: Metrophobic;
                     font-size: 1em;
-                    @media  (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media  (min-width : 768px) and (max-width : 1024px) {
                         font-size: 1.55em ;
                     }
-                    @media  (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         font-size: .95em;
                     }
                 }
@@ -340,7 +345,7 @@ body {
                     position: absolute;
                     font-family: Helvetica;
                     font-size: .7em;
-                    @media  (min-device-width : 1024px) {
+                    @media  (min-width : 1024px) {
                         bottom: 25%;
                     }
                 }
